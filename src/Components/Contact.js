@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 class Contact extends Component {
   render() {
-
+   // eslint-disable-next-line no-undef
+  
     if(this.props.data){
       var name = this.props.data.name;
       var street = this.props.data.address.street;
@@ -107,10 +108,15 @@ class Contact extends Component {
                         <b><a href="#">3 Days Ago</a></b>
                      </li>
                   </ul>
-		         </div> */}
+               </div> */}
+           
             </aside>
       </div>
+      
+
+
    </section>
+   
     );
   }
 }
