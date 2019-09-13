@@ -15,49 +15,28 @@
       "zip": "500045"
     },
     "website": "http://imwebruster.wordpress.com",
-    "resumedownload":"https://drive.google.com/file/d/1muie7XnBJYJi3fbOzKp6rGKcVlzToP17/view?usp=sharing",
+    "resumedownload":"https://drive.google.com/file/d/1Xl1ekNxKmTkCuv2bbCwtNM2ADZXSkugs/view?usp=sharing",
     "social":[
       {
-        "name":"facebook",
-        "url":"http://facebook.com",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
-        "name":"google-plus",
-        "url":"http://googleplus.com",
-        "className":"fa fa-google-plus"
-      },
-      {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/",
+        "url":"https://www.linkedin.com/in/webruster/",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/",
-        "className":"fa fa-instagram"
+        "name":"Stackoverflow",
+        "url":"https://stackoverflow.com/users/3690846/webruster",
+        "className":"fa fa-stack-overflow"
       },
       {
         "name":"github",
         "url":"http://github.com/webrusterkk",
         "className":"fa fa-github"
-      },
-      {
-        "name":"skype",
-        "url":"http://skype.com",
-        "className":"fa fa-skype"
       }
     ]
   },
   "resume":{
-    "skillmessage":"These are My Skills and i'm  a Full Stack Developer ,flexible to learn new technologies",
+    "skillmessage":"These are My Skills and i'm a Research Engineer ,flexible to learn new technologies",
     "education":[
-      
       {
         "school":"Gitam University",
         "degree":"Master of Business Administration",
@@ -74,7 +53,7 @@
     "work":[
       {
         "company":"Conduent LLC (Spinoff from Xerox)",
-        "title":"System Development Specialist",
+        "title":"Research Engineer-II",
         "years":"December 2018 - Current",
         "description":"Working in Research and Development area for Customer Experience platform using cutting edge technologies "
       },
@@ -92,6 +71,10 @@
       }
     ],
     "skills":[
+      {
+        "name":"Machine Learning",
+        "level":"86%"
+      },
       {
         "name":"Angular",
         "level":"85%"
@@ -134,7 +117,7 @@
         "image":"resume-website.jpg",
         "url":"https://webrusterkk.github.io/webbie/"
       }
-      
+
     ]
   },
   "testimonials":{
