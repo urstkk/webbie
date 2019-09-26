@@ -115,7 +115,13 @@
         "title":"Resume Website",
         "category":"A React based resume website template",
         "image":"resume-website.jpg",
-        "url":"https://webrusterkk.github.io/webbie/"
+        "url":"https://webruster.tk"
+      },
+      {
+        "title": "NeuroDAC",
+        "category": "Online Patient Consultation Platform",
+        "image":"neurodac.jpg",
+        "url":"https://neurodac.com"
       }
 
     ]
@@ -125,6 +131,10 @@
       {
         "text":"A Quick learner and adapt to any programming Language , it gives confidence to us if he is on our side at any complex execution",
         "user":"Abhi Rao - Delivery Head"
+      },
+      {
+        "text": "I have been in touch with Kishore for quite a Some time I believe I have met very few personalities like him. Having an in depth knowledge on what he is doing and very passionate to achieve new mile stones",
+        "user":"Mize Stuart - Techincal Lead"
       }
     ]
   }

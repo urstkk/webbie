@@ -25,7 +25,7 @@ class Portfolio extends Component {
 
     return (
       <section id="portfolio">
- <div className="text-container">
+ {/* <div className="text-container"> */}
       <div className="row">
 
          <div className="twelve columns collapsed">
@@ -37,7 +37,7 @@ class Portfolio extends Component {
             </div>
           </div>
       </div>
-      </div>
+      {/* </div> */}
    </section>
     );
   }
