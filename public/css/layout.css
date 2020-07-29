@@ -31,7 +31,7 @@ body { background: #0f0f0f; }
 header {
    position: relative;
    height: 800px;
-   min-height: 500px;
+   min-height: 450px;
    width: 100%;
    background: #161415 url(../images/header-background.jpg) no-repeat top center;
    background-size: cover !important;
@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -418,7 +418,7 @@ ul#nav li.current a { color: #F06000; }
 
 #portfolio {
    background: #ebeeee;
-   padding-top: 90px;
+   padding-top: 96px;
    padding-bottom: 60px;
 }
 #portfolio h1 {
@@ -654,6 +654,7 @@ call-to-action .button {
    min-height: 700px;
    width: 100%;
    overflow: hidden;
+   padding-top: 96px;
 }
 #testimonials .text-container {
    padding-top: 96px;

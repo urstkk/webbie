@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { IProps, IState } from '../Models/ActionTypes';
 
-class About extends Component {
+class About extends Component<IProps, IState> {
   render() {
-
+   var profilepic:any;
     if(this.props.data){
       var name = this.props.data.name;
-      var profilepic= "images/"+this.props.data.image;
+       profilepic= "images/"+this.props.data.image;
       var bio = this.props.data.bio;
       var street = this.props.data.address.street;
       var city = this.props.data.address.city;
