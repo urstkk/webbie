@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {IProps,IState} from './Models/ActionTypes';
 import ReactGA from 'react-ga';
 import $ from 'jquery';
 import './App.css';
@@ -10,15 +11,14 @@ import Resume from './Components/Resume';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
-class App extends Component {
+class App extends Component<IProps, IState> {
 
-  constructor(props){
+  constructor(props:IProps){
     super(props);
-    this.state = {
-      foo: 'bar',
+   this.state = {     
       resumeData: {}
     };
-
+    
     ReactGA.initialize('UA-110570651-1');
     ReactGA.pageview(window.location.pathname);
 
@@ -29,10 +29,10 @@ class App extends Component {
       url:'./resumeData.json',
       dataType:'json',
       cache: false,
-      success: function(data){
+      success: (data:any)=>{
         this.setState({resumeData: data});
-      }.bind(this),
-      error: function(xhr, status, err){
+      },
+      error: (xhr:any, status:any, err:any)=>{
         console.log(err);
         alert(err);
       }
@@ -44,15 +44,22 @@ class App extends Component {
   }
 
   render() {
+    const webbieProps = { 
+      main: this.state.resumeData.main,
+     resume: this.state.resumeData.resume,
+     portfolio:this.state.resumeData.portfolio,
+     testimonials:this.state.resumeData.testimonials
+        }
     return (
+  
       <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.portfolio}/>
-        <Testimonials data={this.state.resumeData.testimonials}/>
+        <Header data={webbieProps.main}/>
+        <About data={webbieProps.main}/>
+        <Resume data={webbieProps.resume}/>
+        <Portfolio data={webbieProps.portfolio}/>
+        <Testimonials data={webbieProps.testimonials}/>
         {/* <Contact data={this.state.resumeData.main}/> */}
-        <Footer data={this.state.resumeData.main}/>
+        <Footer data={webbieProps.main}/>
       </div>
     );
   }
