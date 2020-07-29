@@ -1,10 +1,10 @@
 {
   "main": {
     "name":"T.Krishna Kishore",
-    "occupation":"Research Engineer-II",
-    "description":"I am Full stack developer, working in R&D Dept, exploring and discovery of new technological solutions using cutting edge technologies",
+    "occupation":"Senior Consultant",
+    "description":"I am Full stack developer, working in Financial Sector, exploring and discovery of new technological solutions using cutting edge technologies",
     "image":"profilepic.jpg",
-    "bio":"I'm a Passionate Developer, mainly working in R&D Area, Love to create new things that changes the way we see the world",
+    "bio":"I'm a Passionate Developer, mainly working in Financial Sector, Love to create new things that changes the way we see the world",
     "contactmessage":"You can contact me if you need any technical help, Happy to Help !!",
     "email": "imwebruster@gmail.com",
     "phone": "+91-9985853599",
@@ -35,7 +35,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"These are My Skills and i'm a Research Engineer ,flexible to learn new technologies",
+    "skillmessage":"These are My Skills and i'm a Senior Consultant ,flexible to learn new technologies",
     "education":[
       {
         "school":"Gitam University",
@@ -52,9 +52,15 @@
     ],
     "work":[
       {
+        "company":"Capgemini",
+        "title":"Senior Consultant",
+        "years":"December 2019 - Current",
+        "description":"Working in Cloud mainly Azure and building Scalable and Secure applications for Financial Secotr"
+      },
+      {
         "company":"Conduent LLC (Spinoff from Xerox)",
         "title":"Research Engineer-II",
-        "years":"December 2018 - Current",
+        "years":"December 2018 - December 2019",
         "description":"Working in Research and Development area for Customer Experience platform using cutting edge technologies "
       },
       {
@@ -71,6 +77,14 @@
       }
     ],
     "skills":[
+      {
+        "name":"Azure",
+        "level":"73%"
+      },
+      {
+        "name":".net Core",
+        "level":"80%"
+      },
       {
         "name":"Machine Learning",
         "level":"86%"
