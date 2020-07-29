@@ -41,6 +41,7 @@ class App extends Component<IProps, IState> {
 
   componentDidMount(){
     this.getResumeData();
+     /* { <Contact data={this.state.resumeData.main}/>} */
   }
 
   render() {
@@ -54,11 +55,10 @@ class App extends Component<IProps, IState> {
   
       <div className="App">
         <Header data={webbieProps.main}/>
-        <About data={webbieProps.main}/>
-        <Resume data={webbieProps.resume}/>
+        <About data={webbieProps.main}/>       
         <Portfolio data={webbieProps.portfolio}/>
-        <Testimonials data={webbieProps.testimonials}/>
-        {/* <Contact data={this.state.resumeData.main}/> */}
+        <Testimonials data={webbieProps.testimonials}/>       
+        <Resume data={webbieProps.resume}/>
         <Footer data={webbieProps.main}/>
       </div>
     );

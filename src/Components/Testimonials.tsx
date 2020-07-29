@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { IProps, IState } from '../Models/ActionTypes';
 
-class Testimonials extends Component {
+class Testimonials extends Component<IProps, IState> {
   render() {
 
     if(this.props.data){
-      var testimonials = this.props.data.testimonials.map(function(testimonials){
+      var testimonials = this.props.data.testimonials.map((testimonials:any)=>{
         return  <li key={testimonials.user}>
             <blockquote>
                <p>{testimonials.text}</p>
