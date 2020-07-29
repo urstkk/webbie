@@ -76,6 +76,6 @@ class Resume extends Component<IProps, IState> {
    </section>
     );
   }
-}
+} 
 
 export default Resume;
