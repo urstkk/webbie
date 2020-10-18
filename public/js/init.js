@@ -3,8 +3,12 @@
 /* Init JS
 /*
 -----------------------------------------------------------------------------------*/
-
- jQuery(document).ready(function($) {
+$(window).load(function(){
+   $.getScript('./sendEmail.js',function(t){
+console.log(t);
+   });
+});
+jQuery(function($) {
 
 /*----------------------------------------------------*/
 /* FitText Settings
@@ -136,6 +140,10 @@
 /*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/
+   function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+   }
 
    $('form#contactForm button.submit').click(function() {
 
@@ -145,34 +153,62 @@
       var contactEmail = $('#contactForm #contactEmail').val();
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
+         console.log(isEmail(contactEmail));
+         var errorMessage = "Please enter a valid email.";
+      if(!isEmail(contactEmail)){
+         $('#image-loader').fadeOut();
+         $('#message-warning').html("Please enter a valid email.");
+         $('#message-warning').fadeIn();
+       //  alert("Please enter a valid email.");
+         return false;
+      } else{     
+         $('#message-warning').hide();
+      }
 
       var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+      handler(data,function(msg) {
 
-      $.ajax({
-
-	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
-	      success: function(msg) {
-
-            // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
-               $('#message-warning').hide();
-               $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
-            }
-            // There was an error
-            else {
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-	            $('#message-warning').fadeIn();
-            }
-
-	      }
+         // Message was sent
+         if (msg == 'OK') {
+            $('#image-loader').fadeOut();
+            $('#message-warning').hide();
+            $('#contactForm').fadeOut();
+            $('#message-success').fadeIn();   
+         }
+         // There was an error
+         else {
+            $('#image-loader').fadeOut();
+            $('#message-warning').html(msg);
+            $('#message-warning').fadeIn();
+         }
 
       });
+
+      // $.ajax({
+
+	   //    type: "POST",
+	   //    url: "inc/sendEmail.php",
+	   //    data: data,
+	   //    success: function(msg) {
+
+      //       // Message was sent
+      //       if (msg == 'OK') {
+      //          $('#image-loader').fadeOut();
+      //          $('#message-warning').hide();
+      //          $('#contactForm').fadeOut();
+      //          $('#message-success').fadeIn();   
+      //       }
+      //       // There was an error
+      //       else {
+      //          $('#image-loader').fadeOut();
+      //          $('#message-warning').html(msg);
+	   //          $('#message-warning').fadeIn();
+      //       }
+
+	   //    }
+
+      // });
       return false;
    });
 
