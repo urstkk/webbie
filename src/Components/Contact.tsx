@@ -8,7 +8,6 @@ class Contact extends Component<IProps, IState> {
    }
   render() {
    // eslint-disable-next-line no-undef
-   console.log(this.props.data);
     if(this.props.data){
       var name = this.props.data.name;
       var street = this.props.data.address.street;
@@ -47,7 +46,7 @@ class Contact extends Component<IProps, IState> {
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size={35} id="contactName" name="contactName" onChange={this.handleChange}/>
+						   <input type="text"  defaultValue="" size={35} id="contactName" name="contactName" onChange={this.handleChange}/>
                   </div>
 
                   <div>
@@ -56,7 +55,7 @@ class Contact extends Component<IProps, IState> {
                   </div>
 
                   <div>
-						   <label htmlFor="contactSubject">Subject</label>
+						   <label htmlFor="contactSubject">Subject <span className="required">*</span></label>
 						   <input type="text" defaultValue="" size={35} id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
                   </div>
 
