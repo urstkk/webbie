@@ -141,7 +141,13 @@ jQuery(function($) {
    }
 
    $('form#contactForm button.submit').click(function() {
-
+      // eslint-disable-next-line no-undef
+      grecaptcha.ready(function() {
+       // eslint-disable-next-line no-undef
+         grecaptcha.execute('6LeIaSoaAAAAALQMGRZAR4pQU_wJBlgZSzNEQA8j', {action: 'submit'}).then(function(token) {
+             // Add your logic to submit to your backend server here.
+         });
+       });
       $('#image-loader').fadeIn();
 
       var contactName = $('#contactForm #contactName').val();
