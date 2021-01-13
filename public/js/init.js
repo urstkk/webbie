@@ -140,16 +140,15 @@ jQuery(function($) {
       return regex.test(email);
    }
 
-   $('form#contactForm button.submit').click(function() {
-      // eslint-disable-next-line no-undef
-      grecaptcha.ready(function() {
-       // eslint-disable-next-line no-undef
-         grecaptcha.execute('6LeIaSoaAAAAALQMGRZAR4pQU_wJBlgZSzNEQA8j', {action: 'submit'}).then(function(token) {
-             // Add your logic to submit to your backend server here.
-         });
-       });
+   $('form#contactForm button.submit').click(function() {    
       $('#image-loader').fadeIn();
-
+      var response = $('#g-recaptcha-response').val();
+      if(!response) {
+         $('#image-loader').fadeOut();
+         $('#message-warning').html("Prove you are human");
+         $('#message-warning').fadeIn();
+         return false;
+      }
       var contactName = $('#contactForm #contactName').val();
       var contactEmail = $('#contactForm #contactEmail').val();
       var contactSubject = $('#contactForm #contactSubject').val();

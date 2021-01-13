@@ -65,9 +65,9 @@ class Contact extends Component<IProps, IState> {
                   </div>
 
                   <div>
-                     <button data-sitekey="6LeIaSoaAAAAALQMGRZAR4pQU_wJBlgZSzNEQA8j" 
-        data-callback='onSubmit' 
-        data-action='submit' className="submit">Submit</button>
+                  <div className="pl-130 g-recaptcha" data-sitekey="6Le1eyoaAAAAABNv7oSQwa-a815lKCqIZ9h4pc7z"></div>
+                  <br></br>
+                     <button className="submit">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif" />
                      </span>
