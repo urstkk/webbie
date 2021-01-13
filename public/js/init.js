@@ -229,7 +229,7 @@ jQuery(function($) {
       
       '<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border: 1px solid #cccccc;">'+
          '<tr><td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">'+
-          '<tr><td style="color: #153643; font-family: Arial, sans-serif;"><h1 style="font-size: 24px; margin: 0;">Hi I am' +  contactingPerson + '</h1>' +
+          '<tr><td style="color: #153643; font-family: Arial, sans-serif;"><h1 style="font-size: 24px; margin: 0;">Hi I am ' +  contactingPerson + '</h1>' +
            '</td></tr><tr><td style="color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 20px 0 30px 0;">' +
             '<p style="margin: 0;">' + message + '</p></td> </tr> </table> </td></tr>'+
          '<tr><td bgcolor="#191919" style="padding: 30px 30px;"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">'+
