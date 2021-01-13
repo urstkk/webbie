@@ -46,7 +46,7 @@ class Contact extends Component<IProps, IState> {
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size={35} id="contactName" name="contactName" onChange={this.handleChange}/>
+						   <input type="text"  defaultValue="" size={35} id="contactName" name="contactName" onChange={this.handleChange}/>
                   </div>
 
                   <div>
@@ -55,7 +55,7 @@ class Contact extends Component<IProps, IState> {
                   </div>
 
                   <div>
-						   <label htmlFor="contactSubject">Subject</label>
+						   <label htmlFor="contactSubject">Subject <span className="required">*</span></label>
 						   <input type="text" defaultValue="" size={35} id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
                   </div>
 
@@ -65,6 +65,8 @@ class Contact extends Component<IProps, IState> {
                   </div>
 
                   <div>
+                  <div className="pl-130 g-recaptcha" data-sitekey="6Le1eyoaAAAAABNv7oSQwa-a815lKCqIZ9h4pc7z"></div>
+                  <br></br>
                      <button className="submit">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif" />

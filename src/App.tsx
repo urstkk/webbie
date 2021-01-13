@@ -10,6 +10,7 @@ import Resume from './Components/Resume';
 // import Contact from './Components/Contact';
 import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
+import Contact from './Components/Contact';
 
 class App extends Component<IProps, IState> {
 
@@ -49,7 +50,8 @@ class App extends Component<IProps, IState> {
       main: this.state.resumeData.main,
      resume: this.state.resumeData.resume,
      portfolio:this.state.resumeData.portfolio,
-     testimonials:this.state.resumeData.testimonials
+     testimonials:this.state.resumeData.testimonials,
+     contactForm: this.state.resumeData.main
         }
     return (
   
@@ -57,7 +59,8 @@ class App extends Component<IProps, IState> {
         <Header data={webbieProps.main}/>
         <About data={webbieProps.main}/>       
         <Portfolio data={webbieProps.portfolio}/>
-        <Testimonials data={webbieProps.testimonials}/>       
+        <Testimonials data={webbieProps.testimonials}/>     
+        <Contact data={webbieProps.contactForm}/>  
         <Resume data={webbieProps.resume}/>
         <Footer data={webbieProps.main}/>
       </div>
