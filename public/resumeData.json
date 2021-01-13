@@ -14,7 +14,7 @@
       "state":"Telangana",
       "zip": "500045"
     },
-    "website": "http://imwebruster.wordpress.com",
+    "website": "https://imwebruster.wordpress.com",
     "resumedownload":"https://drive.google.com/file/d/1hnfBwbOtZVHO7E-1mWlgPSVg-jVRaitQ/view?usp=sharing",
     "social":[
       {
@@ -29,9 +29,19 @@
       },
       {
         "name":"github",
-        "url":"http://github.com/webrusterkk",
+        "url":"https://github.com/webrusterkk",
         "className":"fa fa-github"
+      },
+      {
+        "name": "View Hits",
+        "url": "#",
+        "className":"https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fwebruster.tk"
       }
+    ],
+    "PageViewCount":[
+      {
+      "viewCountUrl": "https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fwebruster.tk"
+    }
     ]
   },
   "resume":{
