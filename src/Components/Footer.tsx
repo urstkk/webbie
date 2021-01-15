@@ -23,7 +23,7 @@ class Footer extends Component<IProps, IState> {
            </ul>
 
            <ul className="copyright">
-              <li>&copy; Copyright 2020 Krishna Kishore</li>
+              <li>&copy; Copyright 2021 Krishna Kishore</li>
               <li>{pageViewCounts}</li>
               {/* <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li> */}
            </ul>
