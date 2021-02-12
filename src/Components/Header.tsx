@@ -29,7 +29,7 @@ class Header extends Component<IProps, IState> {
             <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
             <li><a className="smoothscroll" href="#contact">Contact</a></li> 
             <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a  rel="noopener noreferrer" target="_blank" href="https://webruster.wordpress.com/">Blog</a></li>
+            <li><a  rel="noopener noreferrer" target="_blank" href="https://blueshirtdeveloper.wordpress.com">Blog</a></li>
          
          </ul>
 
