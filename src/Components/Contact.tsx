@@ -65,7 +65,7 @@ class Contact extends Component<IProps, IState> {
                   </div>
 
                   <div>
-                  <div className="g-recaptcha" data-sitekey="6Le1eyoaAAAAABNv7oSQwa-a815lKCqIZ9h4pc7z"></div>
+                  <div className="pl-130 g-recaptcha" data-sitekey="6Le1eyoaAAAAABNv7oSQwa-a815lKCqIZ9h4pc7z"></div>
                   <br></br>
                      <button className="submit">Submit</button>
                      <span id="image-loader">

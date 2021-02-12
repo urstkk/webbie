@@ -765,6 +765,10 @@ properly.
 
    .wide .row { max-width: 1180px; }
 
+   .pl-130{
+   padding-left: 163px;
+}
+
 }
 
 /* ------------------------------------------------------------------ */
@@ -801,9 +805,7 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
-/* .pl-130{
-   padding-left: 163px;
-} */
+
 
 
 
