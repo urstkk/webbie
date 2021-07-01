@@ -1,40 +1,85 @@
 {
   "name": "webruster-resume",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://webruster.tk",
-  "dependencies": {
-    "@types/jest": "^26.0.7",
-    "@types/jquery": "^3.5.0",
-    "@types/mocha": "^8.0.0",
-    "@types/node": "^14.0.27",
-    "@types/react": "^16.9.43",
-    "@types/react-dom": "^16.9.8",
-    "gh-pages": "^2.0.1",
-    "jquery": "^3.5.1",
-    "netlify-cli": "^2.65.6",
-    "nodemailer-sendgrid-transport": "^0.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-ga": "^2.5.7",
-    "react-scripts": "2.1.8",
-    "typescript": "^3.9.7"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npm run lint:code && npm run lint:styles",
+    "lint:fix": "npm run lint:code:fix && npm run lint:styles:fix",
+    "lint:code": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "lint:code:fix": "eslint ./src --fix --ext .js,.jsx,.ts,.tsx",
+    "lint:styles": "stylelint ./**/*.scss",
+    "lint:styles:fix": "stylelint --fix ./**/*.scss",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "icons": "svgr --typescript --memo --icon --replace-attr-values '#fff=currentColor' --template icons/icon-template.js ./icons/svg --out-dir src/icons"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "camelcase": "6.0.0",
+    "framer-motion": "2.8.0",
+    "next": "10.0.0",
+    "react": "16.13.1",
+    "react-copy-to-clipboard": "5.0.2",
+    "react-dom": "16.13.1",
+    "react-infinite-scroll-component": "5.1.0",
+    "react-intersection-observer": "8.29.1",
+    "react-markdown": "4.3.1",
+    "react-share": "4.3.1",
+    "react-syntax-highlighter": "15.1.0",
+    "reading-time": "1.2.0",
+    "sitemap": "6.3.3"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "@endemolshinegroup/cz-github": "2.0.0",
+    "@svgr/cli": "5.4.0",
+    "@types/node": "14.11.2",
+    "@types/react": "16.9.50",
+    "@types/react-syntax-highlighter": "11.0.5",
+    "@typescript-eslint/eslint-plugin": "4.3.0",
+    "@typescript-eslint/parser": "4.3.0",
+    "commitizen": "4.2.1",
+    "conventional-changelog-cli": "2.1.0",
+    "eslint": "7.10.0",
+    "eslint-config-prettier": "6.12.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.3",
+    "eslint-plugin-react-hooks": "4.1.2",
+    "eslint-plugin-simple-import-sort": "5.0.3",
+    "husky": "4.3.0",
+    "lint-staged": "10.4.0",
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-import": "12.0.1",
+    "postcss-preset-env": "6.7.0",
+    "prettier": "2.1.2",
+    "sass": "1.26.11",
+    "stylelint": "13.7.2",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-rational-order": "0.1.2",
+    "stylelint-config-sass-guidelines": "7.1.0",
+    "stylelint-order": "4.1.0",
+    "stylelint-prettier": "1.1.2",
+    "tailwindcss": "1.8.10",
+    "typescript": "4.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@endemolshinegroup/cz-github"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache",
+    "*.scss": "stylelint",
+    "*.*": "prettier --check"
+  }
 }

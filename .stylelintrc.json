@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-rational-order",
+    "stylelint-prettier/recommended"
+  ],
+  "rules": {
+    "max-nesting-depth": 5,
+    "selector-max-compound-selectors": 5,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": null,
+    "order/properties-alphabetical-order": null,
+    "plugin/rational-order": [
+      true,
+      {
+        "empty-line-between-groups": true
+      }
+    ]
+  }
+}
