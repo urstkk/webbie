@@ -1,0 +1,190 @@
+@import 'tailwindcss/base';
+
+@layer base {
+  @font-face {
+    font-weight: normal;
+    font-display: swap;
+    font-family: 'Adinda Melia';
+    src: url('/fonts/adinda-melia.regular.otf');
+  }
+
+  @font-face {
+    font-weight: normal;
+    font-display: swap;
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-Regular.ttf');
+  }
+
+  @font-face {
+    font-weight: bold;
+    font-display: swap;
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-Bold.ttf');
+  }
+
+  @font-face {
+    font-weight: 900;
+    font-display: swap;
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-Black.ttf');
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  h5 {
+    @apply text-base;
+  }
+
+  h6 {
+    @apply text-sm;
+  }
+
+  @media screen and (min-width: 769px) {
+    h1 {
+      @apply text-6xl;
+    }
+
+    h2 {
+      @apply text-5xl;
+    }
+
+    h3 {
+      @apply text-4xl;
+    }
+
+    h4 {
+      @apply text-3xl;
+    }
+
+    h5 {
+      @apply text-2xl;
+    }
+
+    h6 {
+      @apply text-xl;
+    }
+  }
+}
+
+.ul-hover-effect {
+  @apply relative;
+  @apply inline-block;
+  @apply cursor-pointer;
+}
+
+.ul-hover-effect::after {
+  bottom: 0;
+  height: 2px;
+  background: currentColor;
+  transform: scale(0);
+
+  content: '';
+  @apply absolute;
+  @apply left-0;
+  @apply w-full;
+  @apply duration-300;
+}
+
+.ul-hover-effect:hover::after {
+  transform: scale(1);
+}
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+/* Styling for the MdContent Component */
+.md-content {
+  p {
+    @apply text-xl;
+    @apply mb-8;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-secondary;
+    @apply font-black;
+  }
+
+  a {
+    @apply relative;
+    @apply inline-block;
+    @apply text-primary;
+    @apply font-bold;
+    @apply cursor-pointer;
+  }
+
+  a::after {
+    height: 2px;
+
+    transform: scale(0);
+
+    content: '';
+    @apply absolute;
+    @apply bottom-0;
+    @apply left-0;
+    @apply w-full;
+    @apply bg-primary;
+    @apply duration-200;
+  }
+
+  a:hover::after {
+    transform: scale(1);
+  }
+
+  code:not([class]) {
+    @apply font-mono;
+    @apply text-base;
+    @apply bg-dark-light;
+    padding: 0.1em 0.25em;
+  }
+
+  blockquote {
+    @apply border-primary;
+    @apply border-l-4;
+    @apply bg-dark-shade;
+
+    p {
+      @apply p-2;
+    }
+  }
+
+  strong {
+    @apply font-bold;
+  }
+
+  ul {
+    list-style-position: inside;
+    list-style-type: '◉';
+
+    li {
+      @apply ml-4;
+      @apply mb-4;
+      p {
+        display: inline;
+      }
+    }
+
+    li::marker {
+      content: '\2022  ';
+    }
+  }
+}

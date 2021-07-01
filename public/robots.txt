@@ -1,0 +1,6 @@
+Sitemap: https://webruster.tk/api/sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
