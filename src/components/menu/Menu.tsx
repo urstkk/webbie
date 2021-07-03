@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React, { useMemo } from 'react';
 
 import { addCamelCaseKeys } from '../../lib';
+import NavBar from '../nav-bar/NavBar';
 import InfoSection from './info-section/InfoSection';
 import {
   barOneVariants,
@@ -18,19 +19,20 @@ import TileSection from './tile-section/TileSection';
  */
 const Menu: React.FC = () => {
   const styles = useMemo(() => addCamelCaseKeys(s), []);
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(true);
 
   return (
     <>
+      <NavBar />
       <button
         aria-label="Menu"
-        className={`${styles.menuButton} fixed z-30`}
+        className={`${styles.menuButton} ${styles.menuHide}fixed z-30`}
         onClick={() => setIsMenuOpen((isMenuOpen) => !isMenuOpen)}>
         <motion.div
           className="flex flex-col justify-around h-full"
           variants={menuButtonVariants}
           initial="closed"
-          animate={isMenuOpen ? 'open' : 'closed'}>
+          animate="open">
           <motion.div
             className={`${styles.menuBar} w-1/2 bg-white transform origin-left rounded-sm`}
             variants={barOneVariants}

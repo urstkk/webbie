@@ -29,7 +29,6 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
 
   return (
     <>
-      <NavBar />
       <Menu />
       <div
         className="pt-20"
