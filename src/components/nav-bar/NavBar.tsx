@@ -23,11 +23,9 @@ const NavBar: React.FC = () => {
             }
           }}>
           <div className="flex w-full max-w-screen-lg h-full justify-between items-center px-8">
-            <Link href="/">
-              <a className="font-cursive text-3xl text-primary">
-                Krishna Kishore
-              </a>
-            </Link>
+            <a href="/" className="font-cursive text-3xl text-primary">
+              Krishna Kishore
+            </a>
           </div>
         </motion.header>
       )}

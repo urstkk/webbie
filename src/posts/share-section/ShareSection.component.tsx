@@ -37,7 +37,9 @@ const ShareSection: React.FC<ShareSectionProps> = ({ item = {} }) => {
           {item.tag_list &&
             item.tag_list.map((tag) => {
               return (
-                <Link key={tag} href={`/posts/${tag}`}>
+                <Link
+                  key={tag}
+                  href={`/${isNugget ? 'nuggets' : 'posts'}/tag/${tag}`}>
                   <a className="ul-hover-effect inline-block mr-2">#{tag}</a>
                 </Link>
               );
