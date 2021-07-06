@@ -347,7 +347,7 @@ export function useDrawFaceOnCanvas(): void {
       staggerParticles();
       render();
     };
-    img.src = 'img/db_face.png';
+    img.src = 'img/kk_face.png';
 
     /**
      * Find the pixel position of all black pixels on the canvas.
