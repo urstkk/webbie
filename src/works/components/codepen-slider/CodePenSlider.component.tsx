@@ -139,7 +139,7 @@ const CodePenSlider: React.FC = () => {
         </span>
         &apos;s.
       </motion.p>
-      <div className="flex flex-no-wrap overflow-x-scroll overflow-y-hidden ">
+      <div className="flex flex-nowrap overflow-x-scroll overflow-y-hidden ">
         {pens.map((pen) => {
           return (
             <div className="relative -mb-8 " key={pen.id}>
