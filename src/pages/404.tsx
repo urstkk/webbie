@@ -1,7 +1,7 @@
 import React from 'react';
 
-import PageBody from '../components/page-body/PageBody';
 import Page from '../components/page/Page';
+import PageBody from '../components/page-body/PageBody';
 import { useTextEffect } from '../lib/hooks';
 import RelatedPostsSection from '../posts/related-posts-section/RelatedPostsSection.component';
 

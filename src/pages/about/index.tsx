@@ -3,9 +3,9 @@ import Head from 'next/head';
 import React from 'react';
 
 import withPageTransition from '../../components/hoc/with-page-transition';
+import Page from '../../components/page/Page';
 import PageBody from '../../components/page-body/PageBody';
 import PageHeader from '../../components/page-header/PageHeader';
-import Page from '../../components/page/Page';
 import SkillsSection from '../../components/skills-section/SkillsSection.component';
 import SocialIcons from '../../components/social-icons/SocialIcons';
 import { useDrawFaceOnCanvas } from '../../lib/hooks';
@@ -113,7 +113,7 @@ const AboutPage: React.FC = () => {
             title="Skills"
             description="These are some of the skills that I picked up along the way in both professional life and also while simply loitering around the web."
           />
-             <SkillsSection
+          <SkillsSection
             theme="secondary"
             title="Cloud"
             spells={['AZURE']}
@@ -127,29 +127,13 @@ const AboutPage: React.FC = () => {
           <SkillsSection
             theme="secondary"
             title="Frontend"
-            spells={[
-              'HTML/CSS',
-              'SASS/SCSS',
-              'TailwindCSS',           
-              'JS/Typescript'
-            ]}
-            wands={[
-              'Angular',
-              'React',
-              'Ionic',
-              'ejs',
-            ]}
+            spells={['HTML/CSS', 'SASS/SCSS', 'TailwindCSS', 'JS/Typescript']}
+            wands={['Angular', 'React', 'Ionic', 'ejs']}
           />
           <SkillsSection
             title="Backend"
-            spells={[
-              'NodeJS',
-              'Python',
-            ]}
-            wands={[
-              'C#',
-              'rust'
-            ]}
+            spells={['NodeJS', 'Python']}
+            wands={['C#', 'rust']}
           />
           <SkillsSection
             theme="secondary"
@@ -159,7 +143,7 @@ const AboutPage: React.FC = () => {
           />
           <SkillsSection
             title="Tools"
-            spells={['Visual Studio 2019','VS Code', 'Android Studio']}
+            spells={['Visual Studio 2019', 'VS Code', 'Android Studio']}
             wands={['Jupiter', 'Pycharm', 'Xcode']}
           />
         </PageBody>

@@ -6,8 +6,8 @@ import Document, { Head, Html, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render(): JSX.Element {
     return (
-      <Html lang="en">   
-      <Head />
+      <Html lang="en">
+        <Head />
         <body className={'font-sans text-base text-white bg-dark'}>
           <Main />
           <NextScript />

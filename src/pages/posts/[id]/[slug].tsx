@@ -9,8 +9,8 @@ import Link from 'next/link';
 
 import withPageTransition from '../../../components/hoc/with-page-transition';
 import MdContent from '../../../components/md-content/MdContent';
-import PageBody from '../../../components/page-body/PageBody';
 import Page from '../../../components/page/Page';
+import PageBody from '../../../components/page-body/PageBody';
 import SocialShare from '../../../components/social-share/SocialShare.component';
 import { formatDate } from '../../../lib';
 import { Post } from '../../../models/Post';
