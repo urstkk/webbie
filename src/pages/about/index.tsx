@@ -113,61 +113,54 @@ const AboutPage: React.FC = () => {
             title="Skills"
             description="These are some of the skills that I picked up along the way in both professional life and also while simply loitering around the web."
           />
+             <SkillsSection
+            theme="secondary"
+            title="Cloud"
+            spells={['AZURE']}
+            wands={['AWS(Learning)']}
+          />
           <SkillsSection
-            title="Design"
-            spells={['Sketch', 'Figma']}
-            wands={['Zeplin', 'Good Old Pen and Paper']}
+            title="Frame works"
+            spells={['Express Js', 'Flask']}
+            wands={['Django', 'Next Js']}
           />
           <SkillsSection
             theme="secondary"
             title="Frontend"
             spells={[
-              'HTML',
-              'Pug',
-              'CSS',
+              'HTML/CSS',
               'SASS/SCSS',
-              'TailwindCSS',
-              'JS',
-              'Typescript'
+              'TailwindCSS',           
+              'JS/Typescript'
             ]}
             wands={[
               'Angular',
               'React',
               'Ionic',
-              'NextJS',
-              'Apollo Client',
-              'Jest',
-              'Capacitor'
+              'ejs',
             ]}
           />
           <SkillsSection
             title="Backend"
             spells={[
               'NodeJS',
-              'NestJS',
-              'Apollo Server',
-              'Express JS',
-              'TypeORM',
-              'Spring Boot'
+              'Python',
             ]}
             wands={[
-              'Spring Security',
-              'JPA',
-              'Spring Consul',
-              'Spring Batch',
-              'Go'
+              'C#',
+              'rust'
             ]}
           />
           <SkillsSection
             theme="secondary"
             title="Databases"
-            spells={['MySQL', 'Couchbase']}
-            wands={['MongoDB', 'Redis']}
+            spells={['MSSQL']}
+            wands={['MongoDB']}
           />
           <SkillsSection
             title="Tools"
-            spells={['VS Code', 'IntelliJIDEA', 'Sublime', 'Eclipse']}
-            wands={['Terminal', 'Vi', 'Git', 'Atlassian Tool Suite']}
+            spells={['Visual Studio 2019','VS Code', 'Android Studio']}
+            wands={['Jupiter', 'Pycharm', 'Xcode']}
           />
         </PageBody>
       </Page>
