@@ -3,7 +3,7 @@ import { GaEvent } from './types';
 /**
  * The unique google analytics tracking id for the website.
  */
-export const GA_TRACKING_ID = 'UA-101087503-2';
+export const GA_TRACKING_ID = 'G-30EB5QN1DR';
 
 /**
  * Sends a page view event to Google analytics. Use this when you a page navigation happens.
