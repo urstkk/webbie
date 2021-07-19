@@ -131,8 +131,7 @@ const MenuTile: React.FC<MenuTileProps> = ({
     <div className={`${styles.tile} w-1/2 overflow-hidden`}>
       <motion.div
         className={`flex h-full flex-col justify-end px-4 py-8 bg-dark-shade text-primary`}
-        variants={variants}
-        initial={'closed'}>
+        variants={variants}>
         <Link href={url}>
           <motion.a
             className={`${styles.textFill} ${
@@ -141,7 +140,6 @@ const MenuTile: React.FC<MenuTileProps> = ({
                 : styles.textFillPrimary
             } text-${theme} block text-3xl lg:text-5xl font-black uppercase cursor-pointer`}
             variants={contentVariants}
-            initial={'closed'}
             title={title}
             onClick={(event) => {
               onClick();
@@ -153,8 +151,7 @@ const MenuTile: React.FC<MenuTileProps> = ({
         </Link>
         <motion.p
           className={`text-base text-${theme} lg:text-xl`}
-          variants={contentVariants}
-          initial={'closed'}>
+          variants={contentVariants}>
           {subTitle}
         </motion.p>
       </motion.div>
