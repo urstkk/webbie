@@ -133,7 +133,7 @@ const WorksPage: React.FC = () => {
       </Head>
       <PageHeader
         title="Works"
-        description="These are some of the stuff I have done over the years. I love to program and at the same time I love to design as well. So it'll be kinda all over the place."
+        description="These are some of the activities I have done over the years. I love to program and at the same time I love to experiment new languages as well. So it'll be kinda all over the place."
       />
       <PageBody>
         <motion.div variants={sliderContainerVariants} className="mt-32">
