@@ -59,7 +59,7 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
         aria-label="View my profile on Instagram"
         target="_blank"
         rel="noreferrer"
-        href="https://instagram.com/sidthesloth92"
+        href="https://instagram.com/webruster"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Instagram')}>
         <IconInstagram />
@@ -68,7 +68,7 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
         aria-label="View my profile on Behance"
         target="_blank"
         rel="noreferrer"
-        href="https://www.behance.net/sidthesloth92"
+        href="https://www.behance.net/webruster"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Behance')}>
         <IconBehance />

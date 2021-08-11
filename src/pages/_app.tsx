@@ -51,12 +51,12 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         />
         <meta
           property="article:author"
-          content="https://twitter.com/sidthesloth92"
+          content="https://twitter.com/kri4shna"
         />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@sidthesloth92" />
+        <meta name="twitter:site" content="@kri4shna" />
 
         {/* Google Analytics */}
         <script
