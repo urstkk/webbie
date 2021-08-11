@@ -30,8 +30,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-    'prettier/react',
-    'prettier/@typescript-eslint',
+    'prettier',
     'plugin:prettier/recommended'
   ],
   rules: {
@@ -50,6 +49,6 @@ module.exports = {
         aspects: ['invalidHref', 'preferButton']
       }
     ], // NextJS wraps anchor around Link tag which will raise error. So disabling them.
-    'simple-import-sort/sort': 'error'
+    'simple-import-sort/imports': 'error'
   }
 };

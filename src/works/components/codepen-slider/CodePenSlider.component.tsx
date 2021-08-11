@@ -125,10 +125,11 @@ const CodePenSlider: React.FC = () => {
           className="ul-hover-effect text-primary"
           target="_blank"
           rel="noreferrer"
-          href="http://codepen.io/sidthesloth92">
+          href="http://codepen.io/webruster">
           Codepen
         </a>
-        . My pens collectively have over&nbsp;
+        .
+        {/* . My pens collectively have over&nbsp;
         <span className="text-secondary">20566</span>
         <span role="img" aria-label="views" className="mx-1">
           👁
@@ -137,9 +138,9 @@ const CodePenSlider: React.FC = () => {
         <span role="img" aria-label="heart" className="mx-1">
           ❤️
         </span>
-        &apos;s.
+        &apos;s. */}
       </motion.p>
-      <div className="flex flex-no-wrap overflow-x-scroll overflow-y-hidden ">
+      <div className="flex flex-nowrap overflow-x-scroll overflow-y-hidden ">
         {pens.map((pen) => {
           return (
             <div className="relative -mb-8 " key={pen.id}>
@@ -164,7 +165,7 @@ const CodePenSlider: React.FC = () => {
                 }}
                 scrolling="no"
                 title="Simple CSS Loader"
-                src={`https://codepen.io/sidthesloth92/embed/preview/${pen.id}?height=300&theme-id=dark&default-tab=result`}
+                src={`https://codepen.io/webruster/embed/preview/${pen.id}?height=300&theme-id=dark&default-tab=result`}
                 allowFullScreen
               />
             </div>

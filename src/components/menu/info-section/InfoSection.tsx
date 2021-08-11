@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 
+import content from '../../../../webcontent.json';
 import Logo from '../../logo/Logo';
 import SocialIcons from '../../social-icons/SocialIcons';
 
@@ -46,13 +47,13 @@ const InfoSection: React.FC = () => {
       variants={sectionVariants}
       initial={false}>
       <motion.div variants={variants} initial={false}>
-        <Logo side={80} />
+        <Logo side={130} />
       </motion.div>
       <motion.div
         className="font-cursive text-5xl lg:text-6xl text-primary mt-4 lg:mt-16"
         variants={variants}
         initial={false}>
-        Krishna Kishore
+        {content.Components.Menu.Info_Section.title}
       </motion.div>
       <motion.div variants={variants} initial={false}>
         <SocialIcons className="text-2xl md:text-3xl m-1 lg:m-2" />

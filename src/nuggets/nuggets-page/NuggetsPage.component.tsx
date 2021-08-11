@@ -5,9 +5,9 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
+import Page from '../../components/page/Page';
 import PageBody from '../../components/page-body/PageBody';
 import PageHeader from '../../components/page-header/PageHeader';
-import Page from '../../components/page/Page';
 import { formatDate } from '../../lib';
 import { NuggetsPageProps } from '../../pages/nuggets';
 import { useNuggets } from './NuggetsPage.hooks';

@@ -86,6 +86,6 @@ export const pathVariants = {
   },
   exit: {
     pathLength: 1,
-    transition: { duration: 0.7, ease: [0.65, 0, 0.35, 1] }
+    transition: { duration: 1, ease: [0.65, 0, 0.35, 1] }
   }
 };

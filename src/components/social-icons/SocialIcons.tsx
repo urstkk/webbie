@@ -1,8 +1,9 @@
-import IconBehance from '../../icons/Behance';
+import React from 'react';
+
 import IconCodepen from '../../icons/Codepen';
 import IconGithub from '../../icons/Github';
-import IconInstagram from '../../icons/Instagram';
 import IconLinkedin from '../../icons/Linkedin';
+import IconStackoverflow from '../../icons/Stackoverflow';
 import IconTwitter from '../../icons/Twitter';
 import { trackEvent } from '../../lib/ga';
 
@@ -20,10 +21,19 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
   return (
     <div className="flex items-center">
       <a
+        aria-label="View my profile on Stack overflow"
+        target="_blank"
+        rel="noreferrer"
+        href="https://stackoverflow.com/users/3690846/the-blue-shirt-developer"
+        className={`${className} text-secondary hover:text-secondary-tint`}
+        onClick={() => onClick('Stackoverflow')}>
+        <IconStackoverflow />
+      </a>
+      <a
         aria-label="View my profile on Github"
         target="_blank"
         rel="noreferrer"
-        href="https://github.com/sidthesloth92"
+        href="https://github.com/blueshirtdeveloper"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Github')}>
         <IconGithub />
@@ -32,7 +42,7 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
         aria-label="View my profile on Codepen"
         target="_blank"
         rel="noreferrer"
-        href="https://codepen.io/sidthesloth92"
+        href="https://codepen.io/webruster"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Codepen')}>
         <IconCodepen />
@@ -40,9 +50,8 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
       <a
         aria-label="View my profile on Twitter"
         target="_blank"
-        // style="display:none"
         rel="noreferrer"
-        href="https://twitter.com/sidthesloth92"
+        href="https://twitter.com/kri4shna"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Twitter')}>
         <IconTwitter />
@@ -56,24 +65,25 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
         onClick={() => onClick('Linkedin')}>
         <IconLinkedin />
       </a>
-      <a
+
+      {/* <a
         aria-label="View my profile on Instagram"
         target="_blank"
         rel="noreferrer"
-        href="https://instagram.com/sidthesloth92"
+        href="https://instagram.com/webruster"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Instagram')}>
         <IconInstagram />
       </a>
-      <a
+       <a
         aria-label="View my profile on Behance"
         target="_blank"
         rel="noreferrer"
-        href="https://www.behance.net/sidthesloth92"
+        href="https://www.behance.net/webruster"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Behance')}>
         <IconBehance />
-      </a>
+      </a> */}
     </div>
   );
 };

@@ -55,8 +55,8 @@ const Footer: React.FC = () => (
             <div>
               <a
                 className="ul-hover-effect"
-                href="mailto:www.sidthesloth@gmail.com">
-                www.sidthesloth@gmail.com
+                href="mailto:imwebruster@gmail.com">
+                imwebruster@gmail.com
               </a>
             </div>
           </section>
@@ -65,7 +65,7 @@ const Footer: React.FC = () => (
 
       <div className="text-center">
         <p className="mb-2">
-          © 2020 | Coded with
+          © 2021 | Coded with
           <span className="align-middle text-lg" role="img" aria-label="coding">
             &nbsp;❤️&nbsp;
           </span>

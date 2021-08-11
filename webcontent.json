@@ -1,0 +1,62 @@
+{
+  "index": {
+    "title": "Krishna Kishore&apos;s Portfolio and Blog"
+  },
+  "Components": {
+    "Navbar": {
+      "Title": "Krishna Kishore"
+    },
+    "Menu": {
+      "Info_Section": {
+        "title": "Krishna Kishore"
+      },
+      "Tile_section": [
+        {
+          "direction": "bottom",
+          "title": "Works",
+          "subTitle": "Things I've done.",
+          "url": "/works",
+          "theme": "primary"
+        },
+        {
+          "direction": "left",
+          "title": "About",
+          "subTitle": "Get to know me.",
+          "url": "/about",
+          "theme": "secondary"
+        },
+        {
+          "direction": "right",
+          "title": "Nuggets",
+          "subTitle": "Bite sized posts that teach you something new.",
+          "url": "/nuggets",
+          "theme": "secondary"
+        },
+        {
+          "direction": "top",
+          "title": "Posts",
+          "subTitle": "My ramblings about things that excite me.",
+          "url": "/posts",
+          "theme": "primary"
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "title": "Foo Page",
+      "path": "/foo",
+      "content": "<p>Foo content...</p><h2>Heading</h2><p>Some other content...</p>"
+    },
+    {
+      "title": "Bar Page",
+      "path": "/bar",
+      "content": "<p><strong>Bar</strong> content...</p>"
+    },
+    {
+      "title": "Baz Page",
+      "path": "/baz",
+      "content": "<p><strong>Baz</strong> content...</p>"
+    }
+  ]
+}

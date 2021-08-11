@@ -3,9 +3,9 @@ import Head from 'next/head';
 import React from 'react';
 
 import withPageTransition from '../../components/hoc/with-page-transition';
+import Page from '../../components/page/Page';
 import PageBody from '../../components/page-body/PageBody';
 import PageHeader from '../../components/page-header/PageHeader';
-import Page from '../../components/page/Page';
 import SkillsSection from '../../components/skills-section/SkillsSection.component';
 import SocialIcons from '../../components/social-icons/SocialIcons';
 import { useDrawFaceOnCanvas } from '../../lib/hooks';
@@ -80,17 +80,14 @@ const AboutPage: React.FC = () => {
             <motion.p
               className="text-base md:text-2xl mb-4"
               variants={aboutInfoVariants}>
-              I am a developer and designer from India
+              I am a full stack developer and Certified Azure Solution Architect
+              from India
               <span role="img" aria-label="India" className="ml-1">
                 🇮🇳
               </span>
-              . I have a passion for programming and designing. I&apos;d call
-              myself a Jack of all trades but master of none. I am addicted to
-              Cats,
-              <span role="img" aria-label="ice-cream">
-                🍦
-              </span>
-              , JS and anything Open Source.
+              . I have a passion for programming . I&apos;d call myself a Jack
+              of all trades but master of none. Most of my open-source projects
+              are focused on one thing - to help people learn.
             </motion.p>
             <motion.div className="m-auto lg:mx-0" variants={aboutInfoVariants}>
               <SocialIcons className="text-2xl md:text-3xl m-1 lg:m-2" />
@@ -114,60 +111,37 @@ const AboutPage: React.FC = () => {
             description="These are some of the skills that I picked up along the way in both professional life and also while simply loitering around the web."
           />
           <SkillsSection
-            title="Design"
-            spells={['Sketch', 'Figma']}
-            wands={['Zeplin', 'Good Old Pen and Paper']}
+            theme="secondary"
+            title="Cloud"
+            spells={['AZURE']}
+            wands={['AWS(Learning)']}
+          />
+          <SkillsSection
+            title="Frame works"
+            spells={['Express Js', 'Flask']}
+            wands={['Django', 'Next Js']}
           />
           <SkillsSection
             theme="secondary"
             title="Frontend"
-            spells={[
-              'HTML',
-              'Pug',
-              'CSS',
-              'SASS/SCSS',
-              'TailwindCSS',
-              'JS',
-              'Typescript'
-            ]}
-            wands={[
-              'Angular',
-              'React',
-              'Ionic',
-              'NextJS',
-              'Apollo Client',
-              'Jest',
-              'Capacitor'
-            ]}
+            spells={['HTML/CSS', 'SASS/SCSS', 'TailwindCSS', 'JS/Typescript']}
+            wands={['Angular', 'React', 'Ionic', 'ejs']}
           />
           <SkillsSection
             title="Backend"
-            spells={[
-              'NodeJS',
-              'NestJS',
-              'Apollo Server',
-              'Express JS',
-              'TypeORM',
-              'Spring Boot'
-            ]}
-            wands={[
-              'Spring Security',
-              'JPA',
-              'Spring Consul',
-              'Spring Batch',
-              'Go'
-            ]}
+            spells={['NodeJS', 'Python']}
+            wands={['C#', 'rust']}
           />
           <SkillsSection
             theme="secondary"
             title="Databases"
-            spells={['MySQL', 'Couchbase']}
-            wands={['MongoDB', 'Redis']}
+            spells={['MSSQL']}
+            wands={['MongoDB']}
           />
           <SkillsSection
             title="Tools"
-            spells={['VS Code', 'IntelliJIDEA', 'Sublime', 'Eclipse']}
-            wands={['Terminal', 'Vi', 'Git', 'Atlassian Tool Suite']}
+            spells={['Visual Studio 2019', 'VS Code', 'Android Studio']}
+            wands={['Jupiter', 'Pycharm', 'Xcode']}
           />
         </PageBody>
       </Page>
