@@ -11,10 +11,7 @@ interface IHrefState {
 const AnchorWrap = React.forwardRef((children: IHrefState, ref) => {
   console.log(children);
   return (
-    <a
-      href={children.href}
-      ref={ref}
-      className="font-cursive text-3xl text-primary">
+    <a href={children.href} className="font-cursive text-3xl text-primary">
       Krishna Kishore
     </a>
   );
