@@ -27,7 +27,7 @@ const Logo: React.FC<LogoProps> = ({ side = 150 }) => {
   const variants = {
     open: {
       pathLength: 1,
-      transition: { duration: 1.3, ease: [0.7 - 5, 0, 0.55, 1] }
+      transition: { duration: 1.3, ease: [0.75, 0, 0.55, 1] }
     },
     closed: {
       pathLength: 0
