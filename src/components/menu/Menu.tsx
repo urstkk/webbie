@@ -23,12 +23,12 @@ const Menu: React.FC = () => {
         variants={navVariants}
         initial={'closed'}
         animate={isMenuOpen ? 'open' : 'closed'}>
+        <InfoSection />
         <TileSection
           closeMenu={() => {
             setIsMenuOpen(false);
           }}
         />
-        <InfoSection />
       </motion.nav>
     </>
   );

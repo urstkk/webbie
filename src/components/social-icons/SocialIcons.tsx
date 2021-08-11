@@ -1,8 +1,9 @@
-import IconBehance from '../../icons/Behance';
+import React from 'react';
+
 import IconCodepen from '../../icons/Codepen';
 import IconGithub from '../../icons/Github';
-import IconInstagram from '../../icons/Instagram';
 import IconLinkedin from '../../icons/Linkedin';
+import IconStackoverflow from '../../icons/Stackoverflow';
 import IconTwitter from '../../icons/Twitter';
 import { trackEvent } from '../../lib/ga';
 
@@ -19,6 +20,15 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
   };
   return (
     <div className="flex items-center">
+      <a
+        aria-label="View my profile on Stack overflow"
+        target="_blank"
+        rel="noreferrer"
+        href="https://stackoverflow.com/users/3690846/the-blue-shirt-developer"
+        className={`${className} text-secondary hover:text-secondary-tint`}
+        onClick={() => onClick('Stackoverflow')}>
+        <IconStackoverflow />
+      </a>
       <a
         aria-label="View my profile on Github"
         target="_blank"
@@ -55,6 +65,7 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
         onClick={() => onClick('Linkedin')}>
         <IconLinkedin />
       </a>
+
       {/* <a
         aria-label="View my profile on Instagram"
         target="_blank"
