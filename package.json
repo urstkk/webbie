@@ -2,7 +2,7 @@
   "name": "webruster-resume",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://webruster.tk",
+  "homepage": "https://krishnakishore.tk",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",

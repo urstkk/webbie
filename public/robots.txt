@@ -1,4 +1,4 @@
-Sitemap: https://webruster.tk/api/sitemap
+Sitemap: https://krishnakishore.tk/api/sitemap
 
 User-agent: *
 Allow: /*

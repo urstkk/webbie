@@ -47,7 +47,7 @@ const InfoSection: React.FC = () => {
       variants={sectionVariants}
       initial={false}>
       <motion.div variants={variants} initial={false}>
-        <Logo side={80} />
+        <Logo side={130} />
       </motion.div>
       <motion.div
         className="font-cursive text-5xl lg:text-6xl text-primary mt-4 lg:mt-16"
