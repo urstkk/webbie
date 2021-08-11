@@ -80,7 +80,8 @@ const AboutPage: React.FC = () => {
             <motion.p
               className="text-base md:text-2xl mb-4"
               variants={aboutInfoVariants}>
-              I am a full stack developer from India
+              I am a full stack developer and Certified Azure Solution Architect
+              from India
               <span role="img" aria-label="India" className="ml-1">
                 🇮🇳
               </span>
