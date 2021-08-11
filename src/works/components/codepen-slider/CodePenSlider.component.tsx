@@ -128,7 +128,8 @@ const CodePenSlider: React.FC = () => {
           href="http://codepen.io/sidthesloth92">
           Codepen
         </a>
-        . My pens collectively have over&nbsp;
+        .
+        {/* . My pens collectively have over&nbsp;
         <span className="text-secondary">20566</span>
         <span role="img" aria-label="views" className="mx-1">
           👁
@@ -137,7 +138,7 @@ const CodePenSlider: React.FC = () => {
         <span role="img" aria-label="heart" className="mx-1">
           ❤️
         </span>
-        &apos;s.
+        &apos;s. */}
       </motion.p>
       <div className="flex flex-nowrap overflow-x-scroll overflow-y-hidden ">
         {pens.map((pen) => {

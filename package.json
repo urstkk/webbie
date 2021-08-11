@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://webruster.tk",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "PORT=3000 next start",
     "lint": "npm run lint:code && npm run lint:styles",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "camelcase": "^6.2.0",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^2.8.0",
     "next": "^11.0.1",
     "react": "^17.0.2",
     "react-copy-to-clipboard": "^5.0.3",

@@ -1,13 +1,7 @@
-import { motion } from 'framer-motion';
 import Head from 'next/head';
-import React, { useState } from 'react';
+import React from 'react';
 
 import withPageTransition from '../components/hoc/with-page-transition';
-import Menu from '../components/menu/Menu';
-import NavBar from '../components/nav-bar/NavBar';
-import SocialIcons from '../components/social-icons/SocialIcons';
-import IconHelpCircleFilled from '../icons/HelpCircleFilled';
-import { useLandingPageCanvasEffect } from '../lib/hooks';
 
 /**
  * Variants for the help section.
