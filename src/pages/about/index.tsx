@@ -80,17 +80,13 @@ const AboutPage: React.FC = () => {
             <motion.p
               className="text-base md:text-2xl mb-4"
               variants={aboutInfoVariants}>
-              I am a developer and designer from India
+              I am a full stack developer from India
               <span role="img" aria-label="India" className="ml-1">
                 🇮🇳
               </span>
-              . I have a passion for programming and designing. I&apos;d call
-              myself a Jack of all trades but master of none. I am addicted to
-              Cats,
-              <span role="img" aria-label="ice-cream">
-                🍦
-              </span>
-              , JS and anything Open Source.
+              . I have a passion for programming . I&apos;d call myself a Jack
+              of all trades but master of none. Most of my open-source projects
+              are focused on one thing - to help people learn.
             </motion.p>
             <motion.div className="m-auto lg:mx-0" variants={aboutInfoVariants}>
               <SocialIcons className="text-2xl md:text-3xl m-1 lg:m-2" />
