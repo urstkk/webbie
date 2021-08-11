@@ -65,7 +65,7 @@ const Footer: React.FC = () => (
 
       <div className="text-center">
         <p className="mb-2">
-          © 2020 | Coded with
+          © 2021 | Coded with
           <span className="align-middle text-lg" role="img" aria-label="coding">
             &nbsp;❤️&nbsp;
           </span>
