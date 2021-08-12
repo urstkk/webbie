@@ -58,5 +58,8 @@
       "path": "/baz",
       "content": "<p><strong>Baz</strong> content...</p>"
     }
+  ],
+  "custom-list": [
+    {}
   ]
 }
