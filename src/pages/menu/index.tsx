@@ -3,10 +3,10 @@ import Head from 'next/head';
 import React, { useMemo } from 'react';
 
 import withPageTransition from '../../components/hoc/with-page-transition';
+import { navVariants } from '../../components/menu/Menu.animation';
 import { addCamelCaseKeys } from '../../lib';
 import { GA_TRACKING_ID } from '../../lib/ga';
 import InfoSection from './info-section/InfoSection';
-import { navVariants } from './Menu.animation';
 import s from './Menu.module.scss';
 import TileSection from './tile-section/TileSection';
 
