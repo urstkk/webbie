@@ -4,7 +4,6 @@ import React from 'react';
 
 import withPageTransition from '../../components/hoc/with-page-transition';
 import { navVariants } from '../../components/menu/Menu.animation';
-import { GA_TRACKING_ID } from '../../lib/ga';
 import InfoSection from './info-section/InfoSection';
 import TileSection from './tile-section/TileSection';
 
