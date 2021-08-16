@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import AnchorWrap from '../link-component/anchor';
-
 /**
  * Application wide navigation bar that appears at the top for desktop.
  */

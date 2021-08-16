@@ -14,7 +14,6 @@ import TileSection from './tile-section/TileSection';
  * Menu of the website.
  */
 const Menu: React.FC = () => {
-  const styles = useMemo(() => addCamelCaseKeys(s), []);
   const [isMenuOpen, setIsMenuOpen] = React.useState(true);
 
   return (

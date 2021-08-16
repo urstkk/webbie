@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import React from 'react';
 
 import withPageTransition from '../components/hoc/with-page-transition';
