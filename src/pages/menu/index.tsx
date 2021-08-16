@@ -2,9 +2,6 @@ import { motion } from 'framer-motion';
 import React, { useMemo } from 'react';
 
 import withPageTransition from '../../components/hoc/with-page-transition';
-import NavBar from '../../components/nav-bar/NavBar';
-import Page from '../../components/page/Page';
-import PageBody from '../../components/page-body/PageBody';
 import { addCamelCaseKeys } from '../../lib';
 import InfoSection from './info-section/InfoSection';
 import { navVariants } from './Menu.animation';

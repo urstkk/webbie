@@ -31,16 +31,13 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     };
   }, [router.events]);
 
-  if (
-    router.asPath === '/' &&
-    (router.pathname.length === 5 || router.pathname.length === 1)
-  ) {
+  if (router.asPath === '/' && router.pathname !== '/menu') {
     toshowMenu = (
       <>
         <Menu />
       </>
     );
-  } else {
+  } else if (router.pathname !== '/menu') {
     toshowMenu = (
       <>
         <NavBar />
