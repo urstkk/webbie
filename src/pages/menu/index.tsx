@@ -20,22 +20,18 @@ const Menu: React.FC = () => {
 
   return (
     <>
-      <Page>
-        <PageBody>
-          <motion.nav
-            className="fixed top-0 left-0 w-screen h-screen bg-dark flex flex-col lg:flex-row flex-wrap z-20 shadow-md"
-            variants={navVariants}
-            initial={'closed'}
-            animate={isMenuOpen ? 'open' : 'closed'}>
-            <InfoSection />
-            <TileSection
-              closeMenu={() => {
-                setIsMenuOpen(false);
-              }}
-            />
-          </motion.nav>
-        </PageBody>
-      </Page>
+      <motion.nav
+        className="fixed top-0 left-0 w-screen h-screen bg-dark flex flex-col lg:flex-row flex-wrap z-20 shadow-md"
+        variants={navVariants}
+        initial={'closed'}
+        animate={isMenuOpen ? 'open' : 'closed'}>
+        <InfoSection />
+        <TileSection
+          closeMenu={() => {
+            setIsMenuOpen(false);
+          }}
+        />
+      </motion.nav>
     </>
   );
 };

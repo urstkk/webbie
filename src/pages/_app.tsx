@@ -31,7 +31,10 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     };
   }, [router.events]);
 
-  if (router.asPath === '/' && router.pathname.length === 1) {
+  if (
+    router.asPath === '/' &&
+    (router.pathname.length === 5 || router.pathname.length === 1)
+  ) {
     toshowMenu = (
       <>
         <Menu />
@@ -41,7 +44,6 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     toshowMenu = (
       <>
         <NavBar />
-        {/* <Menu /> */}
       </>
     );
   }
@@ -109,12 +111,11 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
       </Head>
       {toshowMenu}
       <div
-        className="pt-20"
-        style={{
-          maxWidth: '100vw',
-          width: '100vw',
-          overflow: 'hidden'
-        }}>
+        className={
+          router.pathname.length > 1 && router.asPath != '/'
+            ? 'app-max pt-20'
+            : ''
+        }>
         <AnimatePresence initial={false} exitBeforeEnter>
           <Component key={router.asPath} {...pageProps} one={'one'} />
         </AnimatePresence>
