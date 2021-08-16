@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import MenuTile from './menu-tile/MenuTile';
+import MenuTile from '../../../components/menu/menu-tile/MenuTile';
 
 /**
  * Props for {@link TileSection}

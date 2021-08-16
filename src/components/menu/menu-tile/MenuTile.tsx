@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useMemo } from 'react';
 
-import { addCamelCaseKeys } from '../../../../lib';
+import { addCamelCaseKeys } from '../../../lib';
 import s from './MenuTile.module.scss';
 
 const directions = {
