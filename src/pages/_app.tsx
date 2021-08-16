@@ -8,25 +8,43 @@ import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 
 import Footer from '../components/footer/Footer';
-import Menu from '../components/menu/Menu';
+import NavBar from '../components/nav-bar/NavBar';
 import { GA_TRACKING_ID } from '../lib/ga';
 import { trackPageView } from '../lib/ga';
+import Menu from './menu/index';
 
 /**
  * This is the root page that envelops the page being navigated to.
  */
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   const router = useRouter();
+  let toshowMenu;
 
   useEffect(() => {
     const handleRouteChange = (url) => {
       trackPageView(url);
     };
+
     router.events.on('routeChangeComplete', handleRouteChange);
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.events]);
+
+  if (router.asPath === '/' && router.pathname.length === 1) {
+    toshowMenu = (
+      <>
+        <Menu />
+      </>
+    );
+  } else {
+    toshowMenu = (
+      <>
+        <NavBar />
+        {/* <Menu /> */}
+      </>
+    );
+  }
 
   return (
     <>
@@ -89,7 +107,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
           }}
         />
       </Head>
-      <Menu />
+      {toshowMenu}
       <div
         className="pt-20"
         style={{
@@ -100,7 +118,11 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         <AnimatePresence initial={false} exitBeforeEnter>
           <Component key={router.asPath} {...pageProps} one={'one'} />
         </AnimatePresence>
-        {router.pathname.length > 1 && <Footer />}
+        {router.pathname.length > 1 && router.asPath != '/' ? (
+          <Footer />
+        ) : (
+          <> </>
+        )}
       </div>
     </>
   );

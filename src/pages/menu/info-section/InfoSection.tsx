@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
-import content from '../../../../webcontent.json';
-import Logo from '../../logo/Logo';
-import SocialIcons from '../../social-icons/SocialIcons';
+import content from '../../../../frontaid.content.json';
+import Logo from '../../../components/logo/Logo';
+import SocialIcons from '../../../components/social-icons/SocialIcons';
 
 /**
  * The info section of the {@link Menu} component.

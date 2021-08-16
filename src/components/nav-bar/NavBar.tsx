@@ -27,8 +27,10 @@ const NavBar: React.FC = () => {
             }
           }}>
           <div className="flex w-full max-w-screen-lg h-full justify-between items-center px-8">
-            <Link href="/" passHref>
-              <AnchorWrap />
+            <Link href="/menu" as="/">
+              <a className="font-cursive text-3xl text-primary">
+                Krishna Kishore
+              </a>
             </Link>
           </div>
         </motion.header>

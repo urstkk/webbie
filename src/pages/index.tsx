@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 
 import withPageTransition from '../components/hoc/with-page-transition';
+import NavBar from '../components/nav-bar/NavBar';
 
 /**
  * Variants for the help section.
@@ -46,6 +47,7 @@ const Home: React.FC = () => {
           content="Krishna Kishore's portfolio and blog where you can get to know about him, what he is upto and pick up a trick or two from his blog posts which are mostly about web development."
         />
       </Head>
+      <NavBar />
     </>
   );
 };
