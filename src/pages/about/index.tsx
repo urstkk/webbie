@@ -71,7 +71,7 @@ const AboutPage: React.FC = () => {
             variants={aboutInfoContainerVariants}>
             <motion.div className="mb-4" variants={aboutInfoVariants}>
               <span className="text-3xl md:text-4xl lg:text-5xl ">
-                Hi! I&apos;m
+                Hi! I&apos;m&nbsp;
               </span>
               <span className="text-5xl md:text-5xl lg:text-6xl font-cursive text-primary">
                 Krishna Kishore
