@@ -1,15 +1,15 @@
 import Head from 'next/head';
 
-const OfflinePage: React.FC = () => {
+const MyOffline: React.FC = () => {
   return (
     <>
       <Head>
-        <title>next-pwa example</title>
+        <title>KK&apos;s Portfolio</title>
       </Head>
-      <h1>This is offline fallback page</h1>
-      <h2>When offline, any page route will fallback to this page</h2>
+      <h1>You are currently accessing Application in Offline</h1>
+      <h2>Please be patient and try again</h2>
     </>
   );
 };
 
-export default OfflinePage;
+export default MyOffline;
