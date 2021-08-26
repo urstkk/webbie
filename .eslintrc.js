@@ -31,7 +31,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'prettier',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:@next/next/recommended',
   ],
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto',}, { usePrettierrc: true }],
