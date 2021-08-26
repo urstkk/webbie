@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const Offline: React.FC = () => {
+const OfflinePage: React.FC = () => {
   return (
     <>
       <Head>
@@ -11,3 +11,5 @@ const Offline: React.FC = () => {
     </>
   );
 };
+
+export default OfflinePage;
