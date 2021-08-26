@@ -8,13 +8,13 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="application-name" content="KK's Portfolio" />
+          <meta name="application-name" content="About KK" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="default"
           />
-          <meta name="apple-mobile-web-app-title" content="KK's Portfolio" />
+          <meta name="apple-mobile-web-app-title" content="About KK" />
           <meta
             name="description"
             content="Krishna Kishore's portfolio and blog where you can get to know about him, what he is upto and pick up a trick or two from his blog posts which are mostly about web development."
