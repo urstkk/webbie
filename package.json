@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@endemolshinegroup/cz-github": "^2.0.0",
+    "@next/eslint-plugin-next": "^11.1.0",
     "@svgr/cli": "^5.5.0",
     "@types/node": "16.3.3",
     "@types/react": "17.0.14",
