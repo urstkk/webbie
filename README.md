@@ -1,8 +1,7 @@
 # Hello World
 This is my personal Website created using React(typescript) and used CI-CD to autodeploy to Github
 
-![Vercel](https://webbie-blueshirtdeveloper.vercel.app/?app=webbie&style=for-the-badge)
-
+![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=webbie-blueshirtdeveloper&style=for-the-badge)
 
   //,
   // "husky": {
