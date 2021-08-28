@@ -103,6 +103,14 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
               `
           }}
         />
+        {/* Propeller Ads*/}
+
+        <script>
+          dangerouslySetInnerHTML=
+          {{
+            __html: `(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',4480767,document.body||document.documentElement)`
+          }}
+        </script>
 
         {/* MS Clarity */}
         <script
