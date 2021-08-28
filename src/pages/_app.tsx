@@ -50,6 +50,9 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
       <Head>
         <meta charSet="UTF-8" />
         <meta
+          name="propeller"
+          content="1ed56f9aecb4168677ac98bf0353015b"></meta>
+        <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
         />
