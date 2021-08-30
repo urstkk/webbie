@@ -44,3 +44,5 @@ tsconfig.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+*.yaml
+*.yml

@@ -1,11 +1,11 @@
-import { shallow } from 'enzyme';
-import * as React from 'react';
+import { expect } from '@jest/globals';
+import React from 'react';
+import renderer from 'react-test-renderer';
 
 import Index from '../src/pages/index';
 
-describe('With Enzyme', function () {
-  it('App shows "A simple example repo" in a <p> tag', function () {
-    const app = shallow(<Index />);
-    expect(app.find('p').text()).equal('A simple example repo');
-  });
+// eslint-disable-next-line mocha/no-global-tests
+it('renders homepage unchanged', function () {
+  const tree = renderer.create(<Index />).toJSON();
+  expect(tree).toMatchSnapshot();
 });

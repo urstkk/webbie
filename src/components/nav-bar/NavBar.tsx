@@ -12,7 +12,7 @@ const NavBar: React.FC = () => {
 
   return (
     <>
-      {router.pathname.length > 1 && (
+      {router?.pathname?.length > 1 && (
         <motion.header
           className="fixed top-0 left-0 w-full h-20 flex justify-center z-10 bg-dark"
           initial={{
