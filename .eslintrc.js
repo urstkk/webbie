@@ -8,12 +8,17 @@ module.exports = {
   settings: {
     react: {
       version: 'detect' // Automatically detect the react version.
-    }
+    },
+    'mocha/additionalCustomNames': [
+      { 'name': 'describeModule', 'type': 'suite', 'interfaces': [ 'BDD' ] },
+      { 'name': 'testModule', 'type': 'testCase', 'interfaces': [ 'TDD' ] }
+  ]
   },
   env: {
     browser: true, // Enables browser globals like window and document
     amd: true, // Enables require() and define() as global variables as per the amd spec.
-    node: true // Enables Node.js global variables and Node.js scoping.
+    node: true, // Enables Node.js global variables and Node.js scoping.
+    'cypress/globals': true
   },
   plugins: [
     '@typescript-eslint',
@@ -21,7 +26,10 @@ module.exports = {
     'react-hooks',
     'jsx-a11y',
     'simple-import-sort',
-    'prettier'
+    'prettier',
+    'mocha',
+    'cypress',
+    'chai-friendly'
   ],
   extends: [
     'eslint:recommended',
@@ -50,6 +58,15 @@ module.exports = {
         aspects: ['invalidHref', 'preferButton']
       }
     ], // NextJS wraps anchor around Link tag which will raise error. So disabling them.
-    'simple-import-sort/imports': 'error'
+    'simple-import-sort/imports': 'error',
+    'mocha/no-skipped-tests': 'error',
+    'mocha/no-exclusive-tests': 'error',
+    'cypress/no-assigning-return-values': 'error',
+    'cypress/no-unnecessary-waiting': 'error',
+    'cypress/assertion-before-screenshot': 'warn',
+    'cypress/no-force': 'warn',
+    'cypress/no-async-tests': 'error',
+    'no-unused-expressions': 0,
+    'chai-friendly/no-unused-expressions': 2
   }
 };
