@@ -133,7 +133,7 @@ const MenuTile: React.FC<MenuTileProps> = ({
         className={`flex h-full flex-col justify-end px-4 py-8 bg-dark-shade text-primary`}
         variants={variants}
         initial={'closed'}>
-        <Link href={url}>
+        <Link href={url} passHref>
           <motion.a
             className={`${styles.textFill} ${
               theme === 'primary'

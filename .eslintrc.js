@@ -40,9 +40,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'prettier',
     'plugin:prettier/recommended',
-    'plugin:mocha/recommended',
-    'plugin:cypress/recommended',
-    'plugin:chai-friendly/recommended'
+    'plugin:@next/next/recommended',
   ],
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto',}, { usePrettierrc: true }],

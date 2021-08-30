@@ -18,75 +18,71 @@ export interface Pen {
  */
 const pens: Pen[] = [
   {
-    id: 'EwbLKR',
+    id: 'bGRNZgJ',
     title: 'CSS Only Swinging Girl'
   },
   {
-    id: 'gGZRpz',
+    id: 'OJgPqWr',
     title: 'CSS Only Diwali Fireworks'
   },
   {
-    id: 'eyBJNY',
+    id: 'VwWYRPQ',
     title: 'Christmas Tree and Snow'
   },
   {
-    id: 'BwVxgb',
+    id: 'ExXaMZZ',
     title: 'CSS Only Riding Girl'
   },
   {
-    id: 'GqjxRQ',
+    id: 'yLXywgN',
     title: 'CSS WOW Smiley'
   },
   {
-    id: 'vKgKeJ',
+    id: 'KKqwEaK',
     title: '3D Ice Cream loving smiley'
   },
   {
-    id: 'pyGyGr',
+    id: 'wveBOzO',
     title: 'SENSEI LOADER CONCEPT'
   },
   {
-    id: 'bExKMp',
+    id: 'vYZEPXj',
     title: 'Loading Concept - Cat'
   },
   {
-    id: 'rNegqzW',
+    id: 'JjJozRJ',
     title: 'CSS Only Coding Cat animation for Website Under Construction'
   },
   {
-    id: 'rvjvZL',
+    id: 'eYRmXdZ',
     title: 'CSS - Spiral Loader Concept'
   },
   {
-    id: 'RyKJzw',
+    id: 'jOwEJrg',
     title: 'CSS Only - Shader Flower Loader Concept'
   },
   {
-    id: 'QyxVWe',
+    id: 'BaZybzv',
     title: 'Loading Concept - Strings'
   },
   {
-    id: 'OJNXEvj',
-    title: 'Squiggly Hero Intro'
-  },
-  {
-    id: 'RwaxKbV',
+    id: 'zYzxbrK',
     title: 'Simple CSS Loader'
   },
   {
-    id: 'Lmzdbj',
+    id: 'bGRNZVz',
     title: 'Minimal Portfolio with Transitions'
   },
   {
-    id: 'bepbRz',
+    id: 'vYZEPNd',
     title: 'Floral Particles'
   },
   {
-    id: 'MyNYbv',
+    id: 'dyRPrYV',
     title: 'CSS Loading Concept'
   },
   {
-    id: 'yVyojr',
+    id: 'ZEyYPGG',
     title: 'Codevember #2 - CSS Square Loader'
   }
 ];
