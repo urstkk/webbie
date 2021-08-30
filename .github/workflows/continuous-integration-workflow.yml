@@ -5,7 +5,7 @@ on:
       - feat/integrates_e2e_unit_tests
 
 jobs:
-  build-test-deploy:
+  webbie-run-testcases:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
