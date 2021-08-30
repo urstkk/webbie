@@ -2,7 +2,7 @@ name: Webbie CI
 on:
   push:
     branches:
-      - feat/integrates_e2e_unit_tests
+      - master
 
 jobs:
   webbie-run-testcases:
