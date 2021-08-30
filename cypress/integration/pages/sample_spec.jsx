@@ -1,7 +1,6 @@
 import 'mocha';
 
 import { mount } from '@cypress/react';
-import { expect } from 'chai';
 import React from 'react';
 
 import Index from '../../../src/pages/index';
