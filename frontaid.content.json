@@ -162,6 +162,13 @@
             }
           ]
         }
+      },
+      "about": {
+        "title": "About - Get to know me",
+        "twitter_description": "These are some of the skills that I picked up along the way in both professional life and also while simply loitering around the web.",
+        "me": "Hi! I&apos;m&nbsp;",
+        "name": "  Krishna Kishore",
+        "description": ""
       }
     }
   },

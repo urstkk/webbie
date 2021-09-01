@@ -70,11 +70,11 @@ const WorksPage: React.FC = () => {
   return (
     <Page>
       <Head>
-        <title>{content.components.menu.works.title}</title>
+        <title>{content.components.menu.works.head_title}</title>
 
         <meta
           property="og:title"
-          content={content.components.menu.works.head_title}
+          content={content.components.menu.works.title}
         />
         <meta property="og:type" content="website" />
         <meta

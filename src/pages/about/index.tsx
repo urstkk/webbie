@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import React from 'react';
 
+import content from '../../../frontaid.content.json';
 import withPageTransition from '../../components/hoc/with-page-transition';
 import Page from '../../components/page/Page';
 import PageBody from '../../components/page-body/PageBody';
@@ -49,19 +50,25 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>About - Get to know me</title>
+        <title>{content.components.menu.about.title}</title>
 
-        <meta property="og:title" content="About - Get to know me" />
+        <meta
+          property="og:title"
+          content={content.components.menu.about.title}
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content={`${process.env.NEXT_PUBLIC_FRONT_END_DOMAIN}/about}`}
         />
 
-        <meta name="twitter:title" content="About - Get to know me" />
+        <meta
+          name="twitter:title"
+          content={content.components.menu.about.title}
+        />
         <meta
           name="twitter:description"
-          content="These are some of the skills that I picked up along the way in both professional life and also while simply loitering around the web."
+          content={content.components.menu.about.twitter_description}
         />
       </Head>
       <div className="flex flex-wrap items-center">
@@ -71,23 +78,16 @@ const AboutPage: React.FC = () => {
             variants={aboutInfoContainerVariants}>
             <motion.div className="mb-4" variants={aboutInfoVariants}>
               <span className="text-3xl md:text-4xl lg:text-5xl ">
-                Hi! I&apos;m&nbsp;
+                {content.components.menu.about.me}
               </span>
               <span className="text-5xl md:text-5xl lg:text-6xl font-cursive text-primary">
-                Krishna Kishore
+                {content.components.menu.about.name}
               </span>
             </motion.div>
             <motion.p
               className="text-base md:text-2xl mb-4"
               variants={aboutInfoVariants}>
-              I am a full stack developer and Certified Azure Solution Architect
-              from India
-              <span role="img" aria-label="India" className="ml-1">
-                🇮🇳
-              </span>
-              . I have a passion for programming . I&apos;d call myself a Jack
-              of all trades but master of none. Most of my open-source projects
-              are focused on one thing - to help people learn.
+              {content.components.menu.about.description}
             </motion.p>
             <motion.div className="m-auto lg:mx-0" variants={aboutInfoVariants}>
               <SocialIcons className="text-2xl md:text-3xl m-1 lg:m-2" />
