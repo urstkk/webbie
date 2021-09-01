@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
+import content from '../../../../frontaid.content.json';
+
 /**
  * Interface for each pen in the {@link CodePenSlider}
  */
@@ -16,76 +18,7 @@ export interface Pen {
  * List of pens to be shown.
  * TODO: Externalize to an API.
  */
-const pens: Pen[] = [
-  {
-    id: 'bGRNZgJ',
-    title: 'CSS Only Swinging Girl'
-  },
-  {
-    id: 'OJgPqWr',
-    title: 'CSS Only Diwali Fireworks'
-  },
-  {
-    id: 'VwWYRPQ',
-    title: 'Christmas Tree and Snow'
-  },
-  {
-    id: 'ExXaMZZ',
-    title: 'CSS Only Riding Girl'
-  },
-  {
-    id: 'yLXywgN',
-    title: 'CSS WOW Smiley'
-  },
-  {
-    id: 'KKqwEaK',
-    title: '3D Ice Cream loving smiley'
-  },
-  {
-    id: 'wveBOzO',
-    title: 'SENSEI LOADER CONCEPT'
-  },
-  {
-    id: 'vYZEPXj',
-    title: 'Loading Concept - Cat'
-  },
-  {
-    id: 'JjJozRJ',
-    title: 'CSS Only Coding Cat animation for Website Under Construction'
-  },
-  {
-    id: 'eYRmXdZ',
-    title: 'CSS - Spiral Loader Concept'
-  },
-  {
-    id: 'jOwEJrg',
-    title: 'CSS Only - Shader Flower Loader Concept'
-  },
-  {
-    id: 'BaZybzv',
-    title: 'Loading Concept - Strings'
-  },
-  {
-    id: 'zYzxbrK',
-    title: 'Simple CSS Loader'
-  },
-  {
-    id: 'bGRNZVz',
-    title: 'Minimal Portfolio with Transitions'
-  },
-  {
-    id: 'vYZEPNd',
-    title: 'Floral Particles'
-  },
-  {
-    id: 'dyRPrYV',
-    title: 'CSS Loading Concept'
-  },
-  {
-    id: 'ZEyYPGG',
-    title: 'Codevember #2 - CSS Square Loader'
-  }
-];
+const pens: Pen[] = content.components.menu.works.codepen.works;
 
 /**
  * Variant for the main slier content.
@@ -115,14 +48,13 @@ const CodePenSlider: React.FC = () => {
       <motion.p
         className="text-lg mb-8"
         variants={sliderContentChildrenVariants}>
-        I love bringing animations to life through code and regularly post
-        on&nbsp;
+        {content.components.menu.works.codepen.description}
         <a
           className="ul-hover-effect text-primary"
           target="_blank"
           rel="noreferrer"
-          href="http://codepen.io/webruster">
-          Codepen
+          href={content.components.menu.works.codepen.url}>
+          {content.components.menu.works.codepen.title}
         </a>
         .
         {/* . My pens collectively have over&nbsp;
@@ -161,7 +93,7 @@ const CodePenSlider: React.FC = () => {
                 }}
                 scrolling="no"
                 title="Simple CSS Loader"
-                src={`https://codepen.io/webruster/embed/preview/${pen.id}?height=300&theme-id=dark&default-tab=result`}
+                src={`${content.components.menu.works.codepen.url}/embed/preview/${pen.id}?height=300&theme-id=dark&default-tab=result`}
                 allowFullScreen
               />
             </div>

@@ -39,7 +39,130 @@
           "url": "/posts",
           "theme": "primary"
         }
-      ]
+      ],
+      "works": {
+        "title": "Works",
+        "head_title": "Works - Things I&apos;ve done.",
+        "twitter_description": "These are some of the stuff I have done over the years.",
+        "description": "These are some of the activities I have done over the years. I love to program and at the same time I love to experiment new languages as well. So it'll be kinda all over the place.",
+        "opensource": {
+          "title": "Open Source",
+          "description": "I love doing open source stuff in my spare time. These are stuff that I have created as OS projects or contributions to existing ones.",
+          "works": [
+            {
+              "name": "Article Date Extract",
+              "url": "https://github.com/blueshirtdeveloper/article-date-extract",
+              "description": "I am the <span class='text-secondary'>author</span> on this project. It is based on <span class='text-secondary'>Python</span> package. A must have package for extracting the date from articles."
+            },
+            {
+              "name": "NewsPaper Demo",
+              "url": "https://github.com/blueshirtdeveloper/newspaper-demo",
+              "description": "This is a demo of a plugin NewPaper. It has over <span class='text-secondary'>28</span> stars."
+            },
+            {
+              "name": "Predicting the Fake News Article",
+              "url": "https://github.com/blueshirtdeveloper/Predicting-Fake-News-Articles",
+              "description": "This is a repo for predicting the fake news articles, Its a capstone project"
+            },
+            {
+              "name": "Botpress",
+              "url": "https://github.com/blueshirtdeveloper/botpress",
+              "description": "Created some custom modules and its a fork project ,deployed this  custom build to the Azure and integrated with third-party solutions"
+            }
+          ]
+        },
+        "codepen": {
+          "title": "CodePen",
+          "url": "http://codepen.io/webruster",
+          "description": "I love bringing animations to life through code and regularly post on ",
+          "works": [
+            {
+              "id": "bGRNZgJ",
+              "title": "CSS Only Swinging Girl"
+            },
+            {
+              "id": "OJgPqWr",
+              "title": "CSS Only Diwali Fireworks"
+            },
+            {
+              "id": "VwWYRPQ",
+              "title": "Christmas Tree and Snow"
+            },
+            {
+              "id": "ExXaMZZ",
+              "title": "CSS Only Riding Girl"
+            },
+            {
+              "id": "yLXywgN",
+              "title": "CSS WOW Smiley"
+            },
+            {
+              "id": "KKqwEaK",
+              "title": "3D Ice Cream loving smiley"
+            },
+            {
+              "id": "wveBOzO",
+              "title": "SENSEI LOADER CONCEPT"
+            },
+            {
+              "id": "vYZEPXj",
+              "title": "Loading Concept - Cat"
+            },
+            {
+              "id": "JjJozRJ",
+              "title": "CSS Only Coding Cat animation for Website Under Construction"
+            },
+            {
+              "id": "eYRmXdZ",
+              "title": "CSS - Spiral Loader Concept"
+            },
+            {
+              "id": "jOwEJrg",
+              "title": "CSS Only - Shader Flower Loader Concept"
+            },
+            {
+              "id": "BaZybzv",
+              "title": "Loading Concept - Strings"
+            },
+            {
+              "id": "zYzxbrK",
+              "title": "Simple CSS Loader"
+            },
+            {
+              "id": "bGRNZVz",
+              "title": "Minimal Portfolio with Transitions"
+            },
+            {
+              "id": "vYZEPNd",
+              "title": "Floral Particles"
+            },
+            {
+              "id": "dyRPrYV",
+              "title": "CSS Loading Concept"
+            },
+            {
+              "id": "ZEyYPGG",
+              "title": "Codevember #2 - CSS Square Loader"
+            }
+          ]
+        },
+        "blogs": {
+          "title": "Blogs",
+          "description": "I love to write blogs in my free time. Started out with wordpress and then moved to DEV.to. Now, trying to combine DEV.to and my personal site.",
+          "works": [
+            {
+              "name": "https://blueshirtdeveloper.wordpress.com",
+              "url": "https://blueshirtdeveloper.wordpress.com/",
+              "description": "This was my first blog and where most of my writings have happened so far and has over <span class='text-secondary'>1000</span> views."
+            },
+            {
+              "name": "DEV.to",
+              "url": "https://dev.to/webrusterkk",
+              "description": "I started writing here for better SEO and seems it did work out well. It has a lonely post with over <span class='text-secondary'>2500</span> views."
+            }
+          ]
+        }
+      }
     }
   },
   "title": "Krishna Kishore&apos;s Portfolio and Blog"

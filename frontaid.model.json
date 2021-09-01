@@ -1,25 +1,130 @@
 {
   ":name": "Krishna Kishore&apos;s Portfolio and Blog",
-  "title": { ":type": "line" },
+  "title": {
+    ":type": "line"
+  },
   "index": {
-    "title": { ":type": "line" },
-    "content": { ":type": "text", ":richtext": true }
+    "title": {
+      ":type": "line"
+    },
+    "content": {
+      ":type": "text",
+      ":richtext": true
+    }
   },
   "components": {
     "navbar": {
-      "title": { ":type": "line" }
+      "title": {
+        ":type": "line"
+      }
     },
     "menu": {
       "info_section": {
-        "title": { ":type": "line" }
+        "title": {
+          ":type": "line"
+        }
       },
       "tile_section": {
         ":items": {
-          "direction": { ":type": "line" },
-          "title": { ":type": "line" },
-          "subtitle": { ":type": "line" },
-          "url": { ":type": "line" },
-          "them": { ":type": "line" }
+          "direction": {
+            ":type": "line"
+          },
+          "title": {
+            ":type": "line"
+          },
+          "subtitle": {
+            ":type": "line"
+          },
+          "url": {
+            ":type": "line"
+          },
+          "them": {
+            ":type": "line"
+          }
+        }
+      },
+      "works": {
+        "title": {
+          ":type": "line"
+        },
+        "head_title": {
+          ":type": "line"
+        },
+        "twitter_description": {
+          ":type": "text",
+          ":richtext": true
+        },
+        "description": {
+          ":type": "text",
+          ":richtext": true
+        },
+        "opensource": {
+          "title": {
+            ":type": "line"
+          },
+          "description": {
+            ":type": "text",
+            ":richtext": true
+          },
+          "works": {
+            ":items": {
+              "name": {
+                ":type": "line"
+              },
+              "url": {
+                ":type": "line"
+              },
+              "description": {
+                ":type": "text",
+                ":richtext": true
+              }
+            }
+          }
+        },
+        "codepen": {
+          "title": {
+            ":type": "line"
+          },
+          "url": {
+            ":type": "text",
+            ":richtext": true
+          },
+          "description": {
+            ":type": "text",
+            ":richtext": true
+          },
+          "works": {
+            ":items": {
+              "id": {
+                ":type": "line"
+              },
+              "title": {
+                ":type": "text",
+                ":richtext": true
+              }
+            }
+          }
+        },
+        "blogs": {
+          "title": {
+            ":type": "line"
+          },
+          "description": "I love to write blogs in my free time. Started out with wordpress and then moved to DEV.to. Now, trying to combine DEV.to and my personal site.",
+          "works": {
+            ":items": {
+              "name": {
+                ":type": "line"
+              },
+              "url": {
+                ":type": "text",
+                ":richtext": true
+              },
+              "description": {
+                ":type": "text",
+                ":richtext": true
+              }
+            }
+          }
         }
       }
     }

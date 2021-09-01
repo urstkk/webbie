@@ -39,7 +39,7 @@ export interface WorksListProps {
   /**
    * List of works.
    */
-  works: Works[];
+  works: Works[] | any;
 }
 
 /**
