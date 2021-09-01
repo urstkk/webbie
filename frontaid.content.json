@@ -176,24 +176,14 @@
             {
               "theme": "secondary",
               "title": "Frontend",
-              "spells": [
-                "AZURE"
-              ],
-              "wands": [
-                "AWS(Learning)"
-              ]
+              "spells": ["AZURE"],
+              "wands": ["AWS(Learning)"]
             },
             {
               "theme": "primary",
               "title": "Frame works",
-              "spells": [
-                "Express Js",
-                "Flask"
-              ],
-              "wands": [
-                "Django",
-                "Next Js"
-              ]
+              "spells": ["Express Js", "Flask"],
+              "wands": ["Django", "Next Js"]
             },
             {
               "theme": "secondary",
@@ -204,34 +194,19 @@
                 "TailwindCSS",
                 "JS/Typescript"
               ],
-              "wands": [
-                "Angular",
-                "React",
-                "Ionic",
-                "ejs"
-              ]
+              "wands": ["Angular", "React", "Ionic", "ejs"]
             },
             {
               "theme": "primary",
               "title": "Backend",
-              "spells": [
-                "NodeJS",
-                "Python"
-              ],
-              "wands": [
-                "C#",
-                "rust"
-              ]
+              "spells": ["NodeJS", "Python"],
+              "wands": ["C#", "rust"]
             },
             {
               "theme": "secondary",
               "title": "Databases",
-              "spells": [
-                "MSSQL"
-              ],
-              "wands": [
-                "MongoDB"
-              ]
+              "spells": ["MSSQL"],
+              "wands": ["MongoDB"]
             }
           ]
         }

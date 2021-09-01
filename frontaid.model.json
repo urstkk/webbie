@@ -143,23 +143,30 @@
         "description": {
           ":type": "text",
           ":richtext": true
-        }
-      },
-      "skillssets": {
-        ":items": {
-          "theme": {
-            ":type": "text"
-          },
+        },
+        "skills": {
           "title": {
             ":type": "text"
           },
-          "spells": {
+          "description": {
             ":type": "text",
             ":richtext": true
           },
-          "wands": {
-            ":type": "text",
-            ":richtext": true
+          "skillssets": {
+            ":items": {
+              "theme": {
+                ":type": "text"
+              },
+              "title": {
+                ":type": "text"
+              },
+              "spells": {
+                ":type": "text"
+              },
+              "wands": {
+                ":type": "text"
+              }
+            }
           }
         }
       }
