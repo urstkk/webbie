@@ -125,6 +125,25 @@
             }
           }
         }
+      },
+      "about": {
+        "title": {
+          ":type": "line"
+        },
+        "twitter_description": {
+          ":type": "text",
+          ":richtext": true
+        },
+        "me": {
+          ":type": "text"
+        },
+        "name": {
+          ":type": "text"
+        },
+        "description": {
+          ":type": "text",
+          ":richtext": true
+        }
       }
     }
   }
