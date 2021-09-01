@@ -1,5 +1,5 @@
 {
-  ":name": "Krishna Kishore&apos;s Portfolio and Blog",
+  ":name": "Krishna Kishore's Portfolio and Blog",
   "title": {
     ":type": "line"
   },
@@ -34,7 +34,7 @@
           "url": {
             ":type": "line"
           },
-          "them": {
+          "theme": {
             ":type": "line"
           }
         }
@@ -161,10 +161,12 @@
                 ":type": "text"
               },
               "spells": {
-                ":type": "text"
+                ":type": "text",
+                ":richtext": true
               },
               "wands": {
-                ":type": "text"
+                ":type": "text",
+                ":richtext": true
               }
             }
           }

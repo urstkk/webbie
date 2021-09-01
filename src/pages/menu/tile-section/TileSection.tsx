@@ -24,7 +24,7 @@ const TileSection: React.FC<TileSectionProps> = ({ closeMenu }) => {
           key={page.url}
           direction={page.direction}
           title={page.title}
-          subTitle={page.subTitle}
+          subTitle={page.subtitle}
           url={page.url}
           theme={page.theme}
           onClick={closeMenu}

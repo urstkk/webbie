@@ -14,35 +14,35 @@
         {
           "direction": "bottom",
           "title": "Works",
-          "subTitle": "Things I've done.",
+          "subtitle": "Things I've done.",
           "url": "/works",
           "theme": "primary"
         },
         {
           "direction": "left",
           "title": "About",
-          "subTitle": "Get to know me.",
+          "subtitle": "Get to know me.",
           "url": "/about",
           "theme": "secondary"
         },
         {
           "direction": "right",
           "title": "Nuggets",
-          "subTitle": "Bite sized posts that teach you something new.",
+          "subtitle": "Bite sized posts that teach you something new.",
           "url": "/nuggets",
           "theme": "secondary"
         },
         {
           "direction": "top",
           "title": "Posts",
-          "subTitle": "My ramblings about things that excite me.",
+          "subtitle": "My ramblings about things that excite me.",
           "url": "/posts",
           "theme": "primary"
         }
       ],
       "works": {
         "title": "Works",
-        "head_title": "Works - Things I&apos;ve done.",
+        "head_title": "Works - Things I've done.",
         "twitter_description": "These are some of the stuff I have done over the years.",
         "description": "These are some of the activities I have done over the years. I love to program and at the same time I love to experiment new languages as well. So it'll be kinda all over the place.",
         "opensource": {
