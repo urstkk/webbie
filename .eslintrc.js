@@ -40,7 +40,6 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'prettier',
     'plugin:prettier/recommended',
-    'next/core-web-vitals',
   ],
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto',}, { usePrettierrc: true }],
