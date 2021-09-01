@@ -168,7 +168,48 @@
         "twitter_description": "These are some of the skills that I picked up along the way in both professional life and also while simply loitering around the web.",
         "me": "Hi! I&apos;m&nbsp;",
         "name": "  Krishna Kishore",
-        "description": "<p>I am a full stack developer and Certified Azure Solution Architect from India </p><p>&lt;span role='img'  aria-label='India' className='ml-1'&gt; 🇮🇳 &lt;/span&gt;         . I have a passion for programming . I&amp;apos;d call myself a Jack         of all trades but master of none. Most of my open-source projects         are focused on one thing - to help people learn.</p>"
+        "description": "<p>I am a full stack developer and Certified Azure Solution Architect from India<span role='img'  aria-label='India' className='ml-1'> 🇮🇳 </span>. I have a passion for programming . I&apos;d call myself a Jack         of all trades but master of none. Most of my open-source projects         are focused on one thing - to help people learn.</p>",
+        "skills": {
+          "title": "Skills",
+          "description": "These are some of the skills that I picked up along the way in both professional life and also while simply loitering around the web.",
+          "skillsets": [
+            {
+              "theme": "secondary",
+              "title": "Frontend",
+              "spells": ["AZURE"],
+              "wands": ["AWS(Learning)"]
+            },
+            {
+              "theme": "primary",
+              "title": "Frame works",
+              "spells": ["Express Js", "Flask"],
+              "wands": ["Django", "Next Js"]
+            },
+            {
+              "theme": "secondary",
+              "title": "Frontend",
+              "spells": [
+                "HTML/CSS",
+                "SASS/SCSS",
+                "TailwindCSS",
+                "JS/Typescript"
+              ],
+              "wands": ["Angular", "React", "Ionic", "ejs"]
+            },
+            {
+              "theme": "primary",
+              "title": "Backend",
+              "spells": ["NodeJS", "Python"],
+              "wands": ["C#", "rust"]
+            },
+            {
+              "theme": "secondary",
+              "title": "Databases",
+              "spells": ["MSSQL"],
+              "wands": ["MongoDB"]
+            }
+          ]
+        }
       }
     }
   },

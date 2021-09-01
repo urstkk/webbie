@@ -144,6 +144,26 @@
           ":type": "text",
           ":richtext": true
         }
+      },
+      "skillssets": {
+        ":items": {
+          "theme": {
+            ":type": "text"
+          },
+          "title": {
+            ":type": "text"
+          },
+          "spells": [
+            {
+              ":type": "text"
+            }
+          ],
+          "wands": [
+            {
+              ":type": "text"
+            }
+          ]
+        }
       }
     }
   }

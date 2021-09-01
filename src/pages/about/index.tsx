@@ -77,18 +77,21 @@ const AboutPage: React.FC = () => {
             className="lg:max-w-xl flex flex-col justify-center align-center m-auto p-4 text-center lg:text-left"
             variants={aboutInfoContainerVariants}>
             <motion.div className="mb-4" variants={aboutInfoVariants}>
-              <span className="text-3xl md:text-4xl lg:text-5xl ">
-                {content.components.menu.about.me}
-              </span>
+              <span
+                className="text-3xl md:text-4xl lg:text-5xl "
+                dangerouslySetInnerHTML={{
+                  __html: content.components.menu.about.me
+                }}></span>
               <span className="text-5xl md:text-5xl lg:text-6xl font-cursive text-primary">
                 {content.components.menu.about.name}
               </span>
             </motion.div>
             <motion.p
               className="text-base md:text-2xl mb-4"
-              variants={aboutInfoVariants}>
-              {content.components.menu.about.description}
-            </motion.p>
+              variants={aboutInfoVariants}
+              dangerouslySetInnerHTML={{
+                __html: content.components.menu.about.description
+              }}></motion.p>
             <motion.div className="m-auto lg:mx-0" variants={aboutInfoVariants}>
               <SocialIcons className="text-2xl md:text-3xl m-1 lg:m-2" />
             </motion.div>
@@ -110,39 +113,17 @@ const AboutPage: React.FC = () => {
             title="Skills"
             description="These are some of the skills that I picked up along the way in both professional life and also while simply loitering around the web."
           />
-          <SkillsSection
-            theme="secondary"
-            title="Cloud"
-            spells={['AZURE']}
-            wands={['AWS(Learning)']}
-          />
-          <SkillsSection
-            title="Frame works"
-            spells={['Express Js', 'Flask']}
-            wands={['Django', 'Next Js']}
-          />
-          <SkillsSection
-            theme="secondary"
-            title="Frontend"
-            spells={['HTML/CSS', 'SASS/SCSS', 'TailwindCSS', 'JS/Typescript']}
-            wands={['Angular', 'React', 'Ionic', 'ejs']}
-          />
-          <SkillsSection
-            title="Backend"
-            spells={['NodeJS', 'Python']}
-            wands={['C#', 'rust']}
-          />
-          <SkillsSection
-            theme="secondary"
-            title="Databases"
-            spells={['MSSQL']}
-            wands={['MongoDB']}
-          />
-          <SkillsSection
-            title="Tools"
-            spells={['Visual Studio 2019', 'VS Code', 'Android Studio']}
-            wands={['Jupiter', 'Pycharm', 'Xcode']}
-          />
+          {content.components.menu.about.skills.skillsets.map(
+            (skill, index) => (
+              <SkillsSection
+                key={skill.title}
+                theme={skill.theme}
+                title={skill.title}
+                spells={skill.spells}
+                wands={skill.wands}
+              />
+            )
+          )}
         </PageBody>
       </Page>
       <style jsx>{`

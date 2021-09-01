@@ -31,7 +31,7 @@ export interface SkillsSectionProps {
   /**
    * The theme of the section.
    */
-  theme?: 'primary' | 'secondary';
+  theme?: 'primary' | 'secondary' | string;
 }
 
 /**
