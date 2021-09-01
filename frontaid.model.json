@@ -153,16 +153,12 @@
           "title": {
             ":type": "text"
           },
-          "spells": [
-            {
-              ":type": "text"
-            }
-          ],
-          "wands": [
-            {
-              ":type": "text"
-            }
-          ]
+          "spells": {
+            ":type": "text"
+          },
+          "wands": {
+            ":type": "text"
+          }
         }
       }
     }
