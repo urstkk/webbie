@@ -154,10 +154,12 @@
             ":type": "text"
           },
           "spells": {
-            ":type": "text"
+            ":type": "text",
+            ":richtext": true
           },
           "wands": {
-            ":type": "text"
+            ":type": "text",
+            ":richtext": true
           }
         }
       }
