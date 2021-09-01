@@ -161,10 +161,18 @@
                 ":type": "text"
               },
               "spells": {
-                ":items": []
+                ":items": {
+                  "name": {
+                    ":type": "text"
+                  }
+                }
               },
               "wands": {
-                ":items": []
+                ":items": {
+                  "name": {
+                    ":type": "text"
+                  }
+                }
               }
             }
           }
