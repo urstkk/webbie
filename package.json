@@ -2,7 +2,7 @@
   "name": "webruster-resume",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://krishnakishore.tk",
+  "homepage": "https://krishnakishore.co.in",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
@@ -45,7 +45,7 @@
     "@cypress/react": "^5.9.4",
     "@cypress/webpack-dev-server": "^1.4.0",
     "@endemolshinegroup/cz-github": "^2.0.0",
-    "@next/eslint-plugin-next": "^11.1.0",
+    "@next/eslint-plugin-next": "^11.1.2",
     "@svgr/cli": "^5.5.0",
     "@testing-library/react": "^12.0.0",
     "@types/chai": "^4.2.21",

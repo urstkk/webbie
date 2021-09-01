@@ -48,7 +48,7 @@ interface MenuTileProps {
   /**
    * The direction from which menu tile slides from.
    */
-  direction: 'top' | 'right' | 'bottom' | 'left';
+  direction: 'top' | 'right' | 'bottom' | 'left' | string;
 
   /**
    * The title of the tile.
@@ -68,7 +68,7 @@ interface MenuTileProps {
   /**
    * The theme of the tile.
    */
-  theme: 'primary' | 'secondary';
+  theme: 'primary' | 'secondary' | string;
 
   /**
    * Function to be called menu tile is clicked.
