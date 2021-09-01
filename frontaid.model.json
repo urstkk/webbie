@@ -161,12 +161,10 @@
                 ":type": "text"
               },
               "spells": {
-                ":type": "text",
-                ":richtext": true
+                ":items": []
               },
               "wands": {
-                ":type": "text",
-                ":richtext": true
+                ":items": []
               }
             }
           }
