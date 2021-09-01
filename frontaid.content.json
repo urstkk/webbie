@@ -236,14 +236,7 @@
           ]
         }
       },
-      "skillssets": [
-        {
-          "theme": "secondary",
-          "title": "Frontend",
-          "spells": "<p>[</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"HTML/CSS\",</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"SASS/SCSS\",</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"TailwindCSS\",</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"JS/Typescript\"</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p>",
-          "wands": "<p>[\"Angular\",&nbsp;\"React\",&nbsp;\"Ionic\",&nbsp;\"ejs\"]</p>"
-        }
-      ]
+      "skillssets": []
     }
   },
   "title": "Krishna Kishore&apos;s Portfolio and Blog"
