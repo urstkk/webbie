@@ -6,10 +6,6 @@
   "index": {
     "title": {
       ":type": "line"
-    },
-    "content": {
-      ":type": "text",
-      ":richtext": true
     }
   },
   "components": {
@@ -109,7 +105,10 @@
           "title": {
             ":type": "line"
           },
-          "description": "I love to write blogs in my free time. Started out with wordpress and then moved to DEV.to. Now, trying to combine DEV.to and my personal site.",
+          "description": {
+            ":type": "text",
+            ":richtext": true
+          },
           "works": {
             ":items": {
               "name": {
