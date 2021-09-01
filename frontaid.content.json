@@ -2,15 +2,15 @@
   "index": {
     "title": "Krishna Kishore&apos;s Portfolio and Blog"
   },
-  "Components": {
-    "Navbar": {
-      "Title": "Krishna Kishore"
+  "components": {
+    "navbar": {
+      "title": "Krishna Kishore"
     },
-    "Menu": {
-      "Info_Section": {
+    "menu": {
+      "info_section": {
         "title": "Krishna Kishore"
       },
-      "Tile_section": [
+      "tile_section": [
         {
           "direction": "bottom",
           "title": "Works",
@@ -41,6 +41,5 @@
         }
       ]
     }
-  },
-  "custom-list": [{}]
+  }
 }
