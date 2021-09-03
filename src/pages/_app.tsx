@@ -50,7 +50,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
       <Head>
         <meta charSet="UTF-8" />
         {/* Propeller ad content key : 1ed56f9aecb4168677ac98bf0353015b */}
-        <meta name="propeller" content={process.env.PROPELLER_ADS}></meta>
+        {/* <meta name="propeller" content={process.env.PROPELLER_ADS}></meta> */}
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
@@ -100,7 +100,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         />
         {/* Propeller Ads*/}
 
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `(function(s,u,z,p){
               s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);
@@ -110,7 +110,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
             4480767,
             document.body||document.documentElement)`
           }}
-        />
+        /> */}
 
         {/* MS Clarity */}
         <script
