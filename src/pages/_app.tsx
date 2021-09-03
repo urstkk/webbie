@@ -87,6 +87,10 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         />
         <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4629230722874075"
+          crossOrigin="anonymous"></script>
+        <script
           dangerouslySetInnerHTML={{
             __html: `
                 window.dataLayer = window.dataLayer || [];
