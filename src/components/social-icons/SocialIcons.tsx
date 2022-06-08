@@ -24,7 +24,7 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
         aria-label="View my profile on Stack overflow"
         target="_blank"
         rel="noreferrer"
-        href="https://stackoverflow.com/users/3690846/the-blue-shirt-developer"
+        href="https://stackoverflow.com/users/3690846/itskrsna"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Stackoverflow')}>
         <IconStackoverflow />
@@ -33,7 +33,7 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
         aria-label="View my profile on Github"
         target="_blank"
         rel="noreferrer"
-        href="https://github.com/blueshirtdeveloper"
+        href="https://github.com/itskrsna"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Github')}>
         <IconGithub />
@@ -60,7 +60,7 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
         aria-label="View my profile on Linkedin"
         target="_blank"
         rel="noreferrer"
-        href="https://www.linkedin.com/in/blueshirtdeveloper/"
+        href="https://www.linkedin.com/in/itskrsna/"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Linkedin')}>
         <IconLinkedin />
