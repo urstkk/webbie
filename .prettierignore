@@ -46,4 +46,3 @@ tsconfig.json
 !.vscode/extensions.json
 *.yaml
 *.yml
-public
