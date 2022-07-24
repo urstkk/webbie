@@ -113,8 +113,8 @@ const AboutPage: React.FC = () => {
           <SkillsSection
             theme="secondary"
             title="Cloud"
-            spells={['AZURE']}
-            wands={['AWS']}
+            spells={['AZURE', 'Oracle']}
+            wands={['AWS', 'GCP']}
           />
           <SkillsSection
             title="Frame works"
