@@ -49,7 +49,6 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="propeller" content={process.env.PROPELLER_ADS}></meta>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
@@ -99,13 +98,6 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
                   page_path: window.location.pathname,
                 });
               `
-          }}
-        />
-        {/* Propeller Ads*/}
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',4480767,document.body||document.documentElement)`
           }}
         />
 
