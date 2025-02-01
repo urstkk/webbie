@@ -43,6 +43,9 @@ module.exports = {
     'plugin:@next/next/recommended',
   ],
   rules: {
+    rules: {
+      "react/no-unknown-property": ["error", { ignore: ["jsx"] }],
+    },
     'prettier/prettier': ['error', { endOfLine: 'auto',}, { usePrettierrc: true }],
     'react/react-in-jsx-scope': 'off', // NextJS does not required React to be in scope always.
     'react/prop-types': 'off',
