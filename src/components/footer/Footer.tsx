@@ -55,8 +55,8 @@ const Footer: React.FC = () => (
             <div>
               <a
                 className="ul-hover-effect"
-                href="mailto:imwebruster@gmail.com">
-                imwebruster@gmail.com
+                href="mailto:me@krishnakishore.co.in">
+                me@krishnakishore.co.in
               </a>
             </div>
           </section>

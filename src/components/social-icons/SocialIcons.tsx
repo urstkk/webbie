@@ -24,7 +24,7 @@ const SocialIcons: React.FC<{ className: string }> = ({ className }) => {
         aria-label="View my profile on Stack overflow"
         target="_blank"
         rel="noreferrer"
-        href="https://stackoverflow.com/users/3690846/the-blue-shirt-developer"
+        href="https://stackoverflow.com/users/3690846/itskrsna"
         className={`${className} text-secondary hover:text-secondary-tint`}
         onClick={() => onClick('Stackoverflow')}>
         <IconStackoverflow />

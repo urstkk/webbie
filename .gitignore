@@ -38,8 +38,3 @@ yarn-error.log*
 
 # Local History for Visual Studio Code
 .history/
-
-**/public/workbox-*.js
-**/public/sw.js
-**/public/sw.js.map
-**/public/workbox-*.js.map

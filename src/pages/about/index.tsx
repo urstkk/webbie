@@ -113,8 +113,8 @@ const AboutPage: React.FC = () => {
           <SkillsSection
             theme="secondary"
             title="Cloud"
-            spells={['AZURE']}
-            wands={['AWS']}
+            spells={['AZURE', 'Oracle']}
+            wands={['AWS', 'GCP']}
           />
           <SkillsSection
             title="Frame works"
@@ -142,6 +142,17 @@ const AboutPage: React.FC = () => {
             title="Tools"
             spells={['Visual Studio 2022', 'VS Code', 'Android Studio']}
             wands={['Jupiter', 'Pycharm', 'Xcode']}
+          />
+          <SkillsSection
+            theme="secondary"
+            title="Mobile Development"
+            spells={['Flutter']}
+            wands={['React Native']}
+          />
+          <SkillsSection
+            title="Data Engineering"
+            spells={['Cloudera', 'Spark']}
+            wands={['Scala', 'Hadoop']}
           />
         </PageBody>
       </Page>
