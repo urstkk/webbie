@@ -45,22 +45,22 @@ const WorksPage: React.FC = () => {
     works: [
       {
         name: 'Article Date Extract',
-        url: 'https://github.com/blueshirtdeveloper/article-date-extract',
+        url: 'https://github.com/itskrsna/article-date-extract',
         description: `I am the <span class="text-secondary">author</span> on this project. It is based on <span class="text-secondary">Python</span> package. A must have package for extracting the date from articles.`
       },
       {
         name: 'NewsPaper Demo',
-        url: 'https://github.com/blueshirtdeveloper/newspaper-demo',
+        url: 'https://github.com/itskrsna/newspaper-demo',
         description: `This is a demo of a plugin NewPaper. It has over <span class="text-secondary">28</span> stars.`
       },
       {
         name: 'Predicting the Fake News Article',
-        url: 'https://github.com/blueshirtdeveloper/Predicting-Fake-News-Articles',
+        url: 'https://github.com/itskrsna/Predicting-Fake-News-Articles',
         description: `This is a repo for predicting the fake news articles, Its a capstone project`
       },
       {
         name: 'Botpress',
-        url: 'https://github.com/blueshirtdeveloper/botpress',
+        url: 'https://github.com/itskrsna/botpress',
         description: `Created some custom modules and its a fork project ,deployed this  custom build to the Azure and integrated with third-party solutions`
       }
     ]

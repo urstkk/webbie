@@ -74,7 +74,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         />
         <meta
           property="article:author"
-          content="https://twitter.com/kri4shna"
+          content="https://x.com/itskrsnakishore"
         />
 
         {/* Twitter Card */}

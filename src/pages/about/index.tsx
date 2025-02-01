@@ -114,7 +114,7 @@ const AboutPage: React.FC = () => {
             theme="secondary"
             title="Cloud"
             spells={['AZURE']}
-            wands={['AWS(Learning)']}
+            wands={['AWS']}
           />
           <SkillsSection
             title="Frame works"
@@ -125,12 +125,12 @@ const AboutPage: React.FC = () => {
             theme="secondary"
             title="Frontend"
             spells={['HTML/CSS', 'SASS/SCSS', 'TailwindCSS', 'JS/Typescript']}
-            wands={['Angular', 'React', 'Ionic', 'ejs']}
+            wands={['Angular', 'React', 'Flutter', 'ejs']}
           />
           <SkillsSection
             title="Backend"
             spells={['NodeJS', 'Python']}
-            wands={['C#', 'rust']}
+            wands={['C#', 'Dart']}
           />
           <SkillsSection
             theme="secondary"
@@ -140,7 +140,7 @@ const AboutPage: React.FC = () => {
           />
           <SkillsSection
             title="Tools"
-            spells={['Visual Studio 2019', 'VS Code', 'Android Studio']}
+            spells={['Visual Studio 2022', 'VS Code', 'Android Studio']}
             wands={['Jupiter', 'Pycharm', 'Xcode']}
           />
         </PageBody>
